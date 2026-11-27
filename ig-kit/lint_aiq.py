@@ -194,6 +194,14 @@ def check_caption(cap, spec):
         fail(f"first caption line is {len(first)} characters; 125 or fewer shows before 'more'")
     if "apartmentiq.in" not in cap:
         fail("caption must carry the site address apartmentiq.in")
+    # 2026-11-27: Notion's rows mode and page fetch return a text field as markup
+    # ([apartmentiq.in](http://apartmentiq.in), <br />, \_). That markup must never reach
+    # Instagram. Read the Caption with a SQL-mode query, which returns plain text.
+    for mark, what in (("](", "a markdown link"), ("<br", "an HTML line break"), ("\\", "a backslash"),
+                       ("http://", "a link"), ("https://", "a link")):
+        if mark in cap:
+            fail(f"caption contains {what} ({mark!r}): Notion markup, not plain text. "
+                 "Read the Caption with a SQL-mode query and lint again")
     tags = re.findall(r"#\w+", cap)
     if len(tags) > 10:
         fail(f"{len(tags)} hashtags; at most 10")

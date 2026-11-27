@@ -58,6 +58,8 @@ CASES = [  # name, spec, caption, expected exit code, text that must appear in t
     ("a guarantee in the caption is refused", GOOD_SPEC, GOOD_CAP.replace("Free sun report", "Guaranteed sun. Free report"), 1, "banned phrase"),
     ("a caption without the site address is refused", GOOD_SPEC, GOOD_CAP.replace("apartmentiq.in", "our site"), 1, "site address"),
     ("more than 10 hashtags are refused", GOOD_SPEC, GOOD_CAP + " " + " ".join(f"#tag{i}" for i in range(10)), 1, "hashtags"),
+    ("a caption read back from Notion as markup is refused", GOOD_SPEC,
+     GOOD_CAP.replace("apartmentiq.in", "[apartmentiq.in](http://apartmentiq.in)").replace("\n\n", "<br /><br />", 1), 1, "Notion markup"),
     ("AI footage without the illustrative line is refused",
      {"format": "reel", "publish_date": "2026-12-03", "ai_footage": True, "sources": [],
       "scenes": [{"clip": "a.mp4", "frames": 96, "lines": ["One"]}, {"clip": "b.mp4", "frames": 96, "lines": ["Two"]}]},
