@@ -62,7 +62,10 @@ Prompts that worked:
 - To keep the **same room and people** in a second mood (sunny, then dark): open the first clip, and use "Describe how to edit this video" with "Keep the same room, the same camera move and the same people. Change ...".
 - To keep the **same person in a new scene**: open the clip, move the playhead to a frame with a clear face, press "Save frame", add that image to the prompt with "+", and write "Use the attached image only as a reference for the same woman and the same room. It is not the first frame."
 - Flow cannot use a video as a reference, only an image.
-- Download each clip as **1080p (Upscaled)**. It takes about a minute. Clips land in the Downloads folder.
+- A **moving shadow on real buildings** did not work (two tries, 27 Nov 2026): one gave a day-to-dusk fade, one a still aerial. What worked first time: a white **scale model** on a drawing in a dim studio with "a single warm lamp moves slowly in a low arc ... the tall tower's long dark shadow sweeps slowly across the low blocks". Use the model shot when the shadow itself is the point.
+- A drawing in shot grows small fake dimension numbers even when the prompt says "no writing". Place the caption band over them and check the first frame.
+- A "plan grows into a building" clip works in one 8 second shot: drawing, glowing lines, columns, slabs, finished tower. Split it into two scenes at the 4 second mark.
+- Download each clip as **1080p (Upscaled)**. It takes about a minute. Clips land in the Downloads folder. Wait a full 90 seconds before moving the file: a move tried while Chrome is still writing fails and leaves the file locked for the session. If that happens, download it again and move the copy named "(1)". Find the file by a name search; do not list the whole Downloads folder.
 
 ## What the kit refuses
 

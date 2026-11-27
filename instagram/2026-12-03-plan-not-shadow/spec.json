@@ -1,0 +1,21 @@
+{
+ "format": "reel", "pillar": "blind-spot", "publish_date": "2026-12-03", "slug": "plan-not-shadow",
+ "ai_footage": true, "end_seconds": 5,
+ "scenes": [
+  {"clip": "clips/plan_to_tower.mp4", "in": 0.3, "frames": 84, "position": "low", "mood": "build", "ambience_db": 0,
+   "chip": "ON PAPER", "lines": ["The plan shows", "the building.", "**Not its shadow.**"], "size": 88},
+  {"clip": "clips/plan_to_tower.mp4", "in": 3.9, "frames": 84, "position": "low", "mood": "bright", "ambience_db": 0,
+   "chip": "ON SITE", "lines": ["A tower this tall", "casts a **long shadow.**"], "size": 88},
+  {"clip": "clips/aerial_rooftops.mp4", "in": 0.5, "frames": 72, "position": "top", "mood": "dark", "ambience_db": 0,
+   "chip": "NEXT DOOR", "lines": ["It can fall on", "the **homes behind it.**"], "size": 88},
+  {"clip": "clips/model_shadow.mp4", "in": 1.6, "frames": 144, "position": "top", "mood": "build", "ambience_db": 0,
+   "chip": "IN WINTER", "lines": ["In winter the shadow", "**reaches further.**"], "size": 84,
+   "then": {"at": 2.5, "chip": "APARTMENTIQ", "mark": true, "lines": ["We build the towers in **3D**", "and trace the sun", "on your exact flat"], "sub": "hour by hour · season by season", "size": 72}}
+ ],
+ "end": {"title": ["See the sun your flat", "**actually gets.**"], "cta": "Free report during pre-launch",
+         "cities": "NOIDA · GURUGRAM", "url": "apartmentiq.in",
+         "footnote": ["Scenes are illustrative.", "Report numbers come from our 3D sun model."]},
+ "sources": [
+  {"display": "3D", "given": "product description from the live site, not a number"}
+ ]
+}
