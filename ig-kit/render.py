@@ -24,7 +24,7 @@ The renderer never invents a number. It draws what the spec says. lint_aiq.py is
 step that proves each number came from sun_facts.py.
 """
 import json, os, sys, re
-from PIL import Image, ImageDraw, ImageFont, ImageFilter
+from PIL import Image, ImageChops, ImageDraw, ImageFont, ImageFilter
 
 W, H = 1080, 1350
 M = 84  # outer margin
@@ -271,6 +271,24 @@ def s_end(s, i, n):
 DRAW = {"hook": s_hook, "compare": s_compare, "shadow": s_shadow, "fact": s_fact, "list": s_list, "end": s_end}
 
 
+SAFE = 60   # px. Instagram's profile grid shows the first slide cropped to 3:4, which cuts
+            # 34 px off each side of a 1080x1350 slide. 60 keeps a margin beyond that on every edge.
+
+
+def check_fit(im, name):
+    """Fail the render if a slide is the wrong size or its content sits too close to an edge.
+    2026-11-27, after Rajat asked whether slides get cut off on Instagram."""
+    assert im.size == (W, H) == (1080, 1350), f"{name}: slide is {im.size}, Instagram portrait is 1080x1350 (4:5)"
+    bg = Image.new("RGB", im.size, im.getpixel((5, 5)))
+    box = ImageChops.difference(im, bg).convert("L").point(lambda v: 255 if v > 40 else 0).getbbox()
+    if box is None:
+        return
+    l, t, r, b = box
+    edges = {"left": l, "top": t, "right": W - r, "bottom": H - b}
+    near = {k: v for k, v in edges.items() if v < SAFE}
+    assert not near, f"{name}: content is {near} px from the edge; keep at least {SAFE} px (grid crop takes 34 px a side)"
+
+
 def main(spec_path, out_dir):
     spec = json.load(open(spec_path, encoding="utf-8"))
     slides = spec["slides"]
@@ -283,6 +301,7 @@ def main(spec_path, out_dir):
     for i, s in enumerate(slides, 1):
         im = DRAW[s["type"]](s, i, len(slides)).convert("RGB")
         name = f"{i:02d}-{s['type']}{suffix}.jpg"
+        check_fit(im, name)
         im.save(os.path.join(out_dir, name), quality=92)
         names.append(name); thumbs.append(im.resize((390, 488), Image.LANCZOS))
     sheet = Image.new("RGB", (390 * len(thumbs) + 12 * (len(thumbs) + 1), 488 + 24), (30, 41, 59))
