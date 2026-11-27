@@ -38,6 +38,7 @@ shadow length is a fact about the sky over flat ground. It is never presented as
 2. **Never repeat a shot to make the second point.** The second scene re-used the walk-in, darkened. Rajat: "the walking in 2nd frame is repetitive.. ned something else to emphasise the point of low sunlight experience". Fix: a new scene that shows living with low sun (lamp on at 11 AM, shawl, laundry indoors, a tower in the window).
 3. **Say what is true, no stronger.** "The tower next door decides your sunlight" became "can take your sunlight". Prefer "can" to "decides", "will" or "always".
 4. **One caption edit so far, not yet a rule:** on the first reel Rajat cut "from sanctioned drawings and RERA filings" from the caption. Do not put that phrase in a caption unless he asks for it.
+5. **ApartmentIQ does not build towers, so do not say "build" after footage of one going up.** The 3 Dec reel showed a plan growing into a tower, then the line "We build the towers in 3D". Rajat: "It seems to covey that we create the neighbour tower". Fix: say what we do to the sun, not to the tower: "We trace the real sun on your exact flat", "3D sunlight analysis". (The first reel's "We build your tower in 3D" was approved, but it had no construction footage before it.)
 
 ## 5. Caption shape (approved on the first reel)
 

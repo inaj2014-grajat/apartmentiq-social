@@ -4,7 +4,7 @@ A tall tower casts a long shadow. In winter the sun sits lower, so that shadow r
 
 Before you buy or rent, ask what stands to the south of your flat, and how tall it is.
 
-ApartmentIQ builds the towers in 3D and traces the real sun on your exact flat, hour by hour, season by season. Free sun report during pre-launch: apartmentiq.in
+ApartmentIQ's 3D sunlight analysis traces the real sun on your exact flat, hour by hour, season by season. Free sun report during pre-launch: apartmentiq.in
 
 Scenes are illustrative.
 
