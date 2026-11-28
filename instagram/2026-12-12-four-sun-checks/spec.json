@@ -3,49 +3,50 @@
  "pillar": "before-you-buy-or-rent",
  "publish_date": "2026-12-12",
  "slug": "four-sun-checks",
+ "revision": 2,
  "ai_footage": true,
  "slides": [
   {
    "type": "hook",
-   "image": "ask_on_visit",
-   "kicker": "BEFORE YOU BUY OR RENT",
+   "image": "leaving_home",
+   "kicker": "SATURDAY MORNING",
+   "size": 64,
    "title": [
-    "Visiting a flat this",
-    "weekend? **Four sun checks.**"
+    "Off to see a flat",
+    "this weekend?",
+    "**Take four sun checks.**"
    ],
-   "size": 60,
-   "sub": "All you need is the compass on your phone.",
    "say": [
     {
      "who": "Meera",
-     "text": "Which way is south?",
+     "text": "Dhoop, you stay home.",
      "tip": [
-      0.5,
-      0.38
+      0.655,
+      0.36
      ],
      "box": [
-      0.4,
-      0.24
+      0.72,
+      0.14
      ]
     },
     {
      "who": "Kabir",
-     "text": "Um. That way?",
+     "text": "He disagrees.",
      "tip": [
-      0.63,
-      0.36
+      0.38,
+      0.465
      ],
      "box": [
-      0.81,
-      0.24
+      0.25,
+      0.3
      ]
     }
    ]
   },
   {
    "type": "scene",
-   "image": "visit_sunny",
-   "kicker": "WHY CHECK",
+   "image": "dhoop_inspects",
+   "kicker": "AT THE FLAT",
    "title": [
     "A visit shows you",
     "**one hour** of one day."
@@ -53,27 +54,27 @@
    "sub": "The sun moves all day, and it sits much lower in winter.",
    "say": [
     {
-     "who": "Meera",
-     "text": "So bright!",
+     "who": "Kabir",
+     "text": "What is he doing?",
      "tip": [
-      0.54,
-      0.3
+      0.695,
+      0.33
      ],
      "box": [
-      0.36,
-      0.15
+      0.78,
+      0.18
      ]
     },
     {
      "who": "Dhoop",
-     "text": "Sign it. Now.",
+     "text": "Checking my sun patch.",
      "tip": [
-      0.41,
-      0.77
+      0.47,
+      0.755
      ],
      "box": [
-      0.21,
-      0.64
+      0.28,
+      0.62
      ]
     }
    ]

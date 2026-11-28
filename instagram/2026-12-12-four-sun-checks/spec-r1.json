@@ -1,0 +1,136 @@
+{
+ "format": "carousel",
+ "pillar": "before-you-buy-or-rent",
+ "publish_date": "2026-12-12",
+ "slug": "four-sun-checks",
+ "ai_footage": true,
+ "slides": [
+  {
+   "type": "hook",
+   "image": "ask_on_visit",
+   "kicker": "BEFORE YOU BUY OR RENT",
+   "title": [
+    "Visiting a flat this",
+    "weekend? **Four sun checks.**"
+   ],
+   "size": 60,
+   "sub": "All you need is the compass on your phone.",
+   "say": [
+    {
+     "who": "Meera",
+     "text": "Which way is south?",
+     "tip": [
+      0.5,
+      0.38
+     ],
+     "box": [
+      0.4,
+      0.24
+     ]
+    },
+    {
+     "who": "Kabir",
+     "text": "Um. That way?",
+     "tip": [
+      0.63,
+      0.36
+     ],
+     "box": [
+      0.81,
+      0.24
+     ]
+    }
+   ]
+  },
+  {
+   "type": "scene",
+   "image": "visit_sunny",
+   "kicker": "WHY CHECK",
+   "title": [
+    "A visit shows you",
+    "**one hour** of one day."
+   ],
+   "sub": "The sun moves all day, and it sits much lower in winter.",
+   "say": [
+    {
+     "who": "Meera",
+     "text": "So bright!",
+     "tip": [
+      0.54,
+      0.3
+     ],
+     "box": [
+      0.36,
+      0.15
+     ]
+    },
+    {
+     "who": "Dhoop",
+     "text": "Sign it. Now.",
+     "tip": [
+      0.41,
+      0.77
+     ],
+     "box": [
+      0.21,
+      0.64
+     ]
+    }
+   ]
+  },
+  {
+   "type": "fact",
+   "kicker": "WINTER SUN",
+   "value": "SOUTH",
+   "label": "In December the noon sun over Noida sits low in the south.",
+   "sub": "About 38° above the horizon at noon on 21 Dec. So look south first."
+  },
+  {
+   "type": "list",
+   "kicker": "ON THE VISIT",
+   "title": [
+    "Four checks,",
+    "**one balcony.**"
+   ],
+   "items": [
+    "Find south with a compass.",
+    "Look at what stands there.",
+    "Find the sun patch. Note the time.",
+    "Come back at another hour."
+   ]
+  },
+  {
+   "type": "end",
+   "title": [
+    "See the sun your flat",
+    "**actually gets.**"
+   ],
+   "cta": "Free report during pre-launch",
+   "url": "apartmentiq.in",
+   "sources": [
+    "Sun position: NOAA solar position equations, Noida 28.54°N,",
+    "flat ground, clear sky. Not a flat's sun hours."
+   ]
+  }
+ ],
+ "sources": [
+  {
+   "display": "38°",
+   "script": "sun_facts.py",
+   "args": "--place noida --date 2026-12-21",
+   "field": "noon_altitude_deg",
+   "format": "{:.0f}°"
+  },
+  {
+   "display": "28.54°N",
+   "script": "sun_facts.py",
+   "args": "--place noida --date 2026-12-21",
+   "field": "latitude_deg",
+   "format": "{:.2f}°N"
+  },
+  {
+   "display": "21 DEC",
+   "given": "date label"
+  }
+ ]
+}

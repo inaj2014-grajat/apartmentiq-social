@@ -3,40 +3,42 @@
  "pillar": "sun-fact",
  "publish_date": "2026-12-15",
  "slug": "december-shadow-reach",
+ "revision": 2,
  "ai_footage": true,
  "slides": [
   {
    "type": "hook",
-   "image": "no_sun_patch",
-   "kicker": "SUN FACTS · NOIDA",
+   "image": "garden_walk",
+   "kicker": "THE MORNING WALK",
+   "size": 64,
    "title": [
-    "A **30 m** building.",
-    "An **85 m** shadow."
+    "Why is the December",
+    "morning walk so cold?",
+    "**Look at the shadows.**"
    ],
-   "sub": "That is its shadow at 09:00 on 21 December, on flat ground.",
    "say": [
     {
-     "who": "Dhoop",
-     "text": "Who is blocking my sun?",
+     "who": "Meera",
+     "text": "Walk faster, I'm freezing.",
      "tip": [
-      0.45,
-      0.72
+      0.53,
+      0.42
      ],
      "box": [
-      0.273,
-      0.62
+      0.44,
+      0.2
      ]
     },
     {
-     "who": "Chhaya",
-     "text": "Whoever it is, thanks.",
+     "who": "Dhoop",
+     "text": "You left the sun.",
      "tip": [
-      0.66,
-      0.68
+      0.73,
+      0.655
      ],
      "box": [
-      0.756,
-      0.56
+      0.79,
+      0.5
      ]
     }
    ]
@@ -45,8 +47,8 @@
    "type": "shadow",
    "kicker": "A DECEMBER MORNING",
    "title": [
-    "The lower the sun,",
-    "the **longer the shadow.**"
+    "A **30 m** building.",
+    "An **85 m** shadow."
    ],
    "height_m": 30,
    "items": [
@@ -86,8 +88,8 @@
   },
   {
    "type": "scene",
-   "image": "balcony_tall_tower",
-   "kicker": "WHAT IT MEANS",
+   "image": "balcony_plants",
+   "kicker": "BACK HOME",
    "title": [
     "A building that looks far",
     "**can still reach you.**"
@@ -96,26 +98,26 @@
    "say": [
     {
      "who": "Kabir",
-     "text": "It looked far away.",
+     "text": "That tower is so far.",
      "tip": [
-      0.69,
-      0.42
+      0.775,
+      0.29
      ],
      "box": [
-      0.787,
-      0.3
+      0.74,
+      0.13
      ]
     },
     {
      "who": "Meera",
-     "text": "Not far enough.",
+     "text": "Its shadow still visits.",
      "tip": [
-      0.37,
-      0.45
+      0.435,
+      0.345
      ],
      "box": [
-      0.189,
-      0.33
+      0.28,
+      0.22
      ]
     }
    ]

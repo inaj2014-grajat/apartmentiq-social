@@ -1,0 +1,128 @@
+{
+ "format": "carousel",
+ "pillar": "before-you-buy-or-rent",
+ "publish_date": "2026-12-19",
+ "slug": "ask-about-winter-sun",
+ "ai_footage": true,
+ "slides": [
+  {
+   "type": "hook",
+   "image": "winter_lamp",
+   "kicker": "BEFORE YOU BUY OR RENT",
+   "size": 62,
+   "title": [
+    "The listing says sun-facing.",
+    "Ask: **in December too?**"
+   ],
+   "sub": "Four questions for the broker or the owner.",
+   "say": [
+    {
+     "who": "Kabir",
+     "text": "It was sunny in June.",
+     "tip": [
+      0.55,
+      0.19
+     ],
+     "box": [
+      0.76,
+      0.1
+     ]
+    },
+    {
+     "who": "Dhoop",
+     "text": "It is not June.",
+     "tip": [
+      0.37,
+      0.8
+     ],
+     "box": [
+      0.385,
+      0.66
+     ]
+    }
+   ]
+  },
+  {
+   "type": "list",
+   "kicker": "FOUR QUESTIONS",
+   "title": [
+    "Ask about **winter sun.**"
+   ],
+   "items": [
+    "Which way does the balcony face, by compass?",
+    "Which hours does it get direct sun in December?",
+    "What is the tallest building to its south?",
+    "Is anything planned on the open plot next door?"
+   ]
+  },
+  {
+   "type": "scene",
+   "image": "dhoop_in_the_sun",
+   "kicker": "WHY ASK NOW",
+   "size": 62,
+   "title": [
+    "Ask before you sign.",
+    "**Not after the first winter.**"
+   ],
+   "sub": "A flat is hard to change. A question is free.",
+   "say": [
+    {
+     "who": "Meera",
+     "text": "Good thing we asked.",
+     "tip": [
+      0.56,
+      0.18
+     ],
+     "box": [
+      0.33,
+      0.12
+     ]
+    },
+    {
+     "who": "Dhoop",
+     "text": "I knew all along.",
+     "tip": [
+      0.33,
+      0.72
+     ],
+     "box": [
+      0.24,
+      0.58
+     ]
+    }
+   ]
+  },
+  {
+   "type": "list",
+   "kicker": "IF THE ANSWER IS VAGUE",
+   "title": [
+    "Then **check it**",
+    "yourself."
+   ],
+   "items": [
+    "Visit once in the morning, once in late afternoon.",
+    "See which neighbours' balconies are in sun.",
+    "Get the flat's sun traced before you decide."
+   ]
+  },
+  {
+   "type": "end",
+   "title": [
+    "See the sun your flat",
+    "**actually gets.**"
+   ],
+   "cta": "Free report during pre-launch",
+   "url": "apartmentiq.in",
+   "sources": [
+    "Scenes are illustrative.",
+    "Report numbers come from our 3D sun model."
+   ]
+  }
+ ],
+ "sources": [
+  {
+   "display": "3D",
+   "given": "product description from the live site, not a number"
+  }
+ ]
+}

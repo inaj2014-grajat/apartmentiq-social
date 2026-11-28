@@ -515,6 +515,286 @@
      ]
     }
    }
+  },
+  {
+   "name": "leaving_home",
+   "file": "leaving_home.jpg",
+   "shows": "Daily life. Saturday morning by their front door. Meera stands at the open door with keys and a blank notepad. Kabir sits on a stool tying his shoes. Dhoop the cat sits in a cloth bag on the floor, set on coming along. Chhaya the dog holds her leash in her mouth.",
+   "light": "soft morning light",
+   "use_for": "setting out to see a flat; weekend plans; the cat insisting on coming",
+   "note": "Made 2026-11-28 in Flow (Nano Banana 2.1, 0 credits). This file is a 968 x 725 screen capture of the picture in Flow's viewer, not the downloaded original (1152 x 864). Replace it with the original when a folder on Rajat's PC is connected.",
+   "bubbles": {
+    "Meera": {
+     "tip": [
+      0.655,
+      0.36
+     ],
+     "box": [
+      0.72,
+      0.14
+     ]
+    },
+    "Kabir": {
+     "tip": [
+      0.38,
+      0.465
+     ],
+     "box": [
+      0.25,
+      0.3
+     ]
+    },
+    "Dhoop": {
+     "tip": [
+      0.555,
+      0.7
+     ],
+     "box": [
+      0.5,
+      0.9
+     ]
+    },
+    "Chhaya": {
+     "tip": [
+      0.7,
+      0.66
+     ],
+     "box": [
+      0.8,
+      0.52
+     ]
+    }
+   }
+  },
+  {
+   "name": "dhoop_inspects",
+   "file": "dhoop_inspects.jpg",
+   "shows": "A site visit in a bright empty flat. Dhoop the cat walks along the edge of the sun patch with his tail up, like an inspector. Meera and Kabir watch from the doorway, amused; Kabir holds a blank sheet. Chhaya the dog sits beside them.",
+   "light": "sun",
+   "use_for": "a site visit as part of a story; checking where the sun lands; the second beat after leaving_home",
+   "note": "Made 2026-11-28 in Flow (Nano Banana 2.1, 0 credits). This file is a 968 x 725 screen capture of the picture in Flow's viewer, not the downloaded original (1152 x 864). Replace it with the original when a folder on Rajat's PC is connected.",
+   "bubbles": {
+    "Meera": {
+     "tip": [
+      0.64,
+      0.38
+     ],
+     "box": [
+      0.42,
+      0.24
+     ]
+    },
+    "Kabir": {
+     "tip": [
+      0.695,
+      0.33
+     ],
+     "box": [
+      0.78,
+      0.18
+     ]
+    },
+    "Dhoop": {
+     "tip": [
+      0.47,
+      0.755
+     ],
+     "box": [
+      0.28,
+      0.62
+     ]
+    },
+    "Chhaya": {
+     "tip": [
+      0.75,
+      0.64
+     ],
+     "box": [
+      0.84,
+      0.5
+     ]
+    }
+   }
+  },
+  {
+   "name": "garden_walk",
+   "file": "garden_walk.jpg",
+   "shows": "Daily life. A winter morning walk in the society garden. Kabir walks Chhaya the dog on a leash, cheerful. Meera walks beside him clutching her shawl, cold. Dhoop the cat stays curled up on a sunny bench.",
+   "light": "low morning sun, long shadows",
+   "use_for": "the morning walk; long winter shadows; who feels the cold and who does not",
+   "note": "Made 2026-11-28 in Flow (Nano Banana 2.1, 0 credits). This file is a 968 x 725 screen capture of the picture in Flow's viewer, not the downloaded original (1152 x 864). Replace it with the original when a folder on Rajat's PC is connected.",
+   "bubbles": {
+    "Meera": {
+     "tip": [
+      0.53,
+      0.42
+     ],
+     "box": [
+      0.44,
+      0.2
+     ]
+    },
+    "Kabir": {
+     "tip": [
+      0.445,
+      0.375
+     ],
+     "box": [
+      0.3,
+      0.2
+     ]
+    },
+    "Dhoop": {
+     "tip": [
+      0.73,
+      0.655
+     ],
+     "box": [
+      0.79,
+      0.5
+     ]
+    },
+    "Chhaya": {
+     "tip": [
+      0.55,
+      0.73
+     ],
+     "box": [
+      0.3,
+      0.86
+     ]
+    }
+   }
+  },
+  {
+   "name": "balcony_plants",
+   "file": "balcony_plants.jpg",
+   "shows": "Daily life. A winter morning on their balcony. Meera waters the potted plants. Dhoop the cat sits among the pots with his eyes shut. Kabir stands in the doorway with tea, looking out at a tower across the lawn with the low sun beside it. Chhaya the dog sleeps on the floor.",
+   "light": "low sun beside a distant tower",
+   "use_for": "a tower that looks far away; morning shadows; plants and winter light; mornings at home",
+   "note": "Made 2026-11-28 in Flow (Nano Banana 2.1, 0 credits). This file is a 968 x 725 screen capture of the picture in Flow's viewer, not the downloaded original (1152 x 864). Replace it with the original when a folder on Rajat's PC is connected.",
+   "bubbles": {
+    "Meera": {
+     "tip": [
+      0.435,
+      0.345
+     ],
+     "box": [
+      0.28,
+      0.22
+     ]
+    },
+    "Kabir": {
+     "tip": [
+      0.775,
+      0.29
+     ],
+     "box": [
+      0.74,
+      0.13
+     ]
+    },
+    "Dhoop": {
+     "tip": [
+      0.445,
+      0.79
+     ],
+     "box": [
+      0.25,
+      0.6
+     ]
+    }
+   }
+  },
+  {
+   "name": "brochure_evening",
+   "file": "brochure_evening.jpg",
+   "shows": "Daily life. An evening at home. Meera and Kabir on the sofa look at a blank brochure open on the coffee table. Dhoop the cat sits on the middle of it and looks up at them. Chhaya the dog rests her chin on the table. The lamp is on; dusk outside.",
+   "light": "evening, lamp on",
+   "use_for": "reading a brochure or a listing at home; what the brochure does not say; questions to ask",
+   "note": "Made 2026-11-28 in Flow (Nano Banana 2.1, 0 credits). This file is a 968 x 725 screen capture of the picture in Flow's viewer, not the downloaded original (1152 x 864). Replace it with the original when a folder on Rajat's PC is connected.",
+   "bubbles": {
+    "Meera": {
+     "tip": [
+      0.555,
+      0.42
+     ],
+     "box": [
+      0.42,
+      0.2
+     ]
+    },
+    "Kabir": {
+     "tip": [
+      0.66,
+      0.375
+     ],
+     "box": [
+      0.72,
+      0.17
+     ]
+    },
+    "Dhoop": {
+     "tip": [
+      0.47,
+      0.64
+     ],
+     "box": [
+      0.22,
+      0.5
+     ]
+    }
+   }
+  },
+  {
+   "name": "heater_noon",
+   "file": "heater_noon.jpg",
+   "shows": "Daily life. A winter day at home with no sun in the room. The lamp is on in the daytime. Meera and Kabir huddle on the sofa under one blanket with tea, cold. Dhoop the cat sits right in front of the room heater. Chhaya the dog lies happily on the cool floor.",
+   "light": "no sun",
+   "use_for": "a flat with no winter sun; heater and lamp on in the daytime; finding out after moving in",
+   "note": "Made 2026-11-28 in Flow (Nano Banana 2.1, 0 credits). This file is a 968 x 725 screen capture of the picture in Flow's viewer, not the downloaded original (1152 x 864). Replace it with the original when a folder on Rajat's PC is connected.",
+   "bubbles": {
+    "Meera": {
+     "tip": [
+      0.7,
+      0.455
+     ],
+     "box": [
+      0.72,
+      0.24
+     ]
+    },
+    "Kabir": {
+     "tip": [
+      0.77,
+      0.43
+     ],
+     "box": [
+      0.78,
+      0.24
+     ]
+    },
+    "Dhoop": {
+     "tip": [
+      0.49,
+      0.695
+     ],
+     "box": [
+      0.25,
+      0.56
+     ]
+    },
+    "Chhaya": {
+     "tip": [
+      0.4,
+      0.86
+     ],
+     "box": [
+      0.22,
+      0.72
+     ]
+    }
+   }
   }
  ]
 }

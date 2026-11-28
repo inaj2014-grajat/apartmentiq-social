@@ -119,6 +119,8 @@ Six pictures made on 28 Nov 2026: `visit_sunny`, `no_sun_patch`, `winter_lamp`, 
 
 Five daily-life pictures added later on 28 Nov 2026, after Rajat asked for "stories from normal daily life" that are "funny and relatable": `sun_corner` (everyone crowds round Dhoop's sunny spot on the balcony), `chasing_sun` (the patch moves and they follow Dhoop, Kabir carrying the cushion), `upstairs_sun` (the neighbour's balcony above is in sun, theirs is not), `home_at_dusk` (Kabir home from work after sunset), `laundry_in_the_sun` (the drying rack and Dhoop want the same sun). These five files are 968 x 725 screen captures from Flow's viewer, because no folder on Rajat's PC was connected to bring the originals in. Replace them with the 1152 x 864 originals from Flow when one is.
 
+Six more made the same evening for the 12, 15 and 19 Dec posts, also as 968 x 725 screen captures: `leaving_home` (Saturday morning by the front door, Dhoop in the bag), `dhoop_inspects` (at a flat, Dhoop walks the edge of the sun patch), `garden_walk` (the morning walk, Dhoop on the sunny bench), `balcony_plants` (Meera waters the plants, a tower across the lawn), `brochure_evening` (Dhoop sits on the brochure), `heater_noon` (no sun, one blanket, Dhoop owns the heater).
+
 New pictures show daily life at home first. Use a site visit only when the story needs one.
 
 ## Known flaws (accepted on episode 1; say so when reporting)
