@@ -1,0 +1,139 @@
+{
+ "format": "carousel",
+ "pillar": "how-it-works",
+ "publish_date": "2026-12-05",
+ "slug": "what-a-sun-score-is",
+ "ai_footage": true,
+ "slides": [
+  {
+   "type": "hook",
+   "image": "visit_sunny",
+   "kicker": "HOW IT WORKS",
+   "size": 62,
+   "title": [
+    "\"Sun-facing\" is a word.",
+    "A **Sun Score** is a number."
+   ],
+   "sub": "It counts the hours of direct sun a flat gets on one winter day.",
+   "say": [
+    {
+     "who": "Kabir",
+     "text": "They said sun-facing.",
+     "tip": [
+      0.66,
+      0.29
+     ],
+     "box": [
+      0.754,
+      0.17
+     ]
+    },
+    {
+     "who": "Dhoop",
+     "text": "I'll be the judge.",
+     "tip": [
+      0.41,
+      0.77
+     ],
+     "box": [
+      0.21,
+      0.64
+     ]
+    }
+   ]
+  },
+  {
+   "type": "fact",
+   "kicker": "THE SUN SCORE",
+   "value": "21 DEC",
+   "label": "Hours of direct sun your flat gets on this one day.",
+   "sub": "Counted for your exact flat, hour by hour."
+  },
+  {
+   "type": "list",
+   "kicker": "WHY THAT DAY",
+   "title": [
+    "The hardest day",
+    "for **sunlight.**"
+   ],
+   "items": [
+    "The days are at their shortest.",
+    "The noon sun is at its lowest.",
+    "Noon shadows are at their longest."
+   ]
+  },
+  {
+   "type": "scene",
+   "image": "no_sun_patch",
+   "kicker": "WHAT IT MEANS",
+   "size": 62,
+   "title": [
+    "Two flats in one tower",
+    "can **score very differently.**"
+   ],
+   "sub": "Floor, side and the towers around all change the hours.",
+   "say": [
+    {
+     "who": "Dhoop",
+     "text": "Low marks from me.",
+     "tip": [
+      0.45,
+      0.72
+     ],
+     "box": [
+      0.232,
+      0.62
+     ]
+    },
+    {
+     "who": "Chhaya",
+     "text": "Full marks from me.",
+     "tip": [
+      0.66,
+      0.68
+     ],
+     "box": [
+      0.773,
+      0.56
+     ]
+    }
+   ]
+  },
+  {
+   "type": "list",
+   "kicker": "HOW TO USE IT",
+   "title": [
+    "One number to",
+    "**compare flats.**"
+   ],
+   "items": [
+    "Tell us the society, the floor and the flat.",
+    "We trace the sun on that exact flat.",
+    "Compare the Sun Scores of the flats you like."
+   ]
+  },
+  {
+   "type": "end",
+   "title": [
+    "See the sun your flat",
+    "**actually gets.**"
+   ],
+   "cta": "Free report during pre-launch",
+   "url": "apartmentiq.in",
+   "sources": [
+    "The Sun Score comes from our 3D sun model. It leaves out trees,",
+    "temporary structures and buildings not yet sanctioned."
+   ]
+  }
+ ],
+ "sources": [
+  {
+   "display": "21 DEC",
+   "given": "date label"
+  },
+  {
+   "display": "3D",
+   "given": "product description from the live site, not a number"
+  }
+ ]
+}

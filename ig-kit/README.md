@@ -101,3 +101,15 @@ Rule: `CONTENT_RULES.md` section 7 item 8. Voices: `series/the-flat-hunt/SERIES.
 - The kit stops if a bubble runs off the picture, sits in a reel's top caption band, or touches the bottom right corner where Flow's mark is. `test_kit.py`: 23/23 on 28 Nov 2026.
 - Always look at the result. The kit cannot tell whether a bubble covers a face.
 
+## Limits found while drafting the December carousels (2026-11-28)
+
+Each was seen failing. Work round them in the post. Do not change the lint to fit a post.
+
+- **A number followed straight by a full stop, comma or colon fails the lint.** "Sunset is at 17:28." is read as `17:28.` and finds no source. Put a word or a unit after the number ("at 17:28 by the clock", "39 m long"), or end the line without a full stop.
+- **A two-part value fails the lint.** `day_length` prints "10 h 20 min"; the lint reads "20 min" as a second number with no source. So a day-length post cannot pass today. Use `sunrise` and `sunset` instead (as `instagram/2026-12-08-december-sunset/` does) until the kit is changed with a test, on Rajat's word.
+- **Clock times print in the 24-hour form** ("17:28"). The lint compares the exact text, so a slide cannot say "5:28 PM".
+- **A line longer than about 13 characters can run off the picture** at the bubble position in `cast.json`. Slide the `box` toward the middle only as far as needed, keep the `tip`, then look at the slide: two long lines on one picture can overlap.
+- **A `shadow` slide takes two items.** A third runs out of its white box.
+- **A `list` slide takes three two-line items, or four items if most fit on one line** (about 27 characters).
+- **21 Dec and "the shortest day".** The live site calls 21 Dec the shortest day. By `sun_facts.py`, in 2026 the day is one minute shorter on 22 and 23 Dec (619 min against 620). On a post, say "the days are at their shortest" and "the noon sun is at its lowest" (38.0° from 21 to 24 Dec).
+
