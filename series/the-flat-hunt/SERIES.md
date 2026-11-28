@@ -43,13 +43,13 @@ Still prompt block (copy, then fill the scene):
 
 Flow settings for video: Omni 1.2 Flash, 9:16, 1 output, 8 seconds, 24 credits a clip. Approve a quote only if it says 1 video and 24 credits.
 
-## The shape of every episode (about 23 seconds)
+## The shape of every episode (about 25 seconds)
 
 | Part | Length | Job |
 |---|---|---|
-| Scene 1 | 3.5 s | The hook, on screen from the first frame. Chip: `THE FLAT HUNT · EP n`. Dhoop does something that shows the hook. |
-| Scene 2 | 4.5 s | The turn: what the visit did not show. A new room or a new state of the room. |
-| Scene 3 | 4.5 s | Living with it in winter. The sub-line may name Dhoop ("Dhoop the cat naps under a lamp now"). |
+| Scene 1 | 4.5 s | The hook, on screen from the first frame. Chip: `THE FLAT HUNT · EP n`. Dhoop does something that shows the hook. |
+| Scene 2 | 5 s | The turn: what the visit did not show. A new room or a new state of the room. |
+| Scene 3 | 5 s | Living with it in winter. The sub-line may name Dhoop ("Dhoop the cat naps under a lamp now"). |
 | Scene 4 | 5.5 s | **The same in every episode:** `clips/s4_home_in_the_sun.mp4` (the look test: Dhoop rolling in the sun at home, Chhaya under the sofa, Gutar on the railing, Meera and Kabir at the door). First 2.5 s: chip `THE RIGHT FLAT`, "Dhoop knows / where the sun is. / **Now you can too.**" Then chip `APARTMENTIQ` with the mark: "We trace the **real sun** / on your exact flat" · "hour by hour · season by season". |
 | End card | 5 s | The standard end card. |
 
@@ -63,7 +63,7 @@ Caption starts "The Flat Hunt · Episode n · <title>" (a middle dot, not a colo
 
 | Ep | Title | Hook | Slot | State |
 |---|---|---|---|---|
-| 1 | The sample flat | The sample flat is sunny. Will yours be? | Thu 10 Dec | Built 28 Nov as `reel-r3.mp4`, waiting for Rajat. The first hook ("You toured the sample flat. You're buying another.") was dropped: Rajat found it "very confusing" |
+| 1 | The sample flat | The sample flat is sunny. Will yours be? | Thu 10 Dec | Built 28 Nov as `reel-r4.mp4` (with speech), waiting for Rajat. The first hook ("You toured the sample flat. You're buying another.") was dropped: Rajat found it "very confusing" |
 | 2 | Low floor, high floor | Low floor. High floor. Same tower. Different winter. | Thu 17 Dec | Not started |
 | 3 | North-facing in December | North-facing. No direct sun all December. | Mon 21 Dec (needs a one-off publish run) | Not started |
 | 4 | East-facing | East-facing. But what stands in the east? | Thu 24 Dec | Not started |
@@ -81,6 +81,26 @@ Episode 1, for reference: (1) the sample flat, a big sun patch, Dhoop flops into
 4. No writing anywhere: no signs, no labels on boxes, no brand on anything.
 5. Flow's watermark is visible and not covered.
 6. Hands, paws and faces: nothing broken, nothing exaggerated.
+
+## Voices (the cast talks)
+
+Rajat, 28 Nov 2026: "i want charectors to interact (dog and cat to talk in as well)". Speech is a speech bubble drawn by the kit (`"say"` in the spec). It is text on screen, not sound.
+
+| Who | How they talk | Example |
+|---|---|---|
+| **Dhoop** (cat) | Dry and entitled. Talks only about the sun, as if it were his. | "Sun! Mine." · "Where is my sun?" · "It's all I have." |
+| **Chhaya** (dog) | Cheerful and easy to please. Loves shade. Often answers Dhoop with the opposite. | "Shade! Mine." · "Shade for me." |
+| **Meera** | Asks the question the visit should have answered. | "I love it!" · "Lamp on at noon?" |
+| **Kabir** | Slower to notice. Reacts to what Meera or the animals point out. | (none yet) |
+| **Gutar** (pigeon) | Says nothing. | |
+
+Rules:
+- Six words at most a line. Two bubbles at most in a scene or on a picture slide. Let them answer each other.
+- The first bubble of a scene comes about 0.8 s after the cut, the second about 1.5 s later. A scene with two bubbles runs at least 4.5 s.
+- The animals never say a number, a product claim or the name ApartmentIQ. The captions carry the facts; the cast carries the feeling.
+- Nobody mocks a broker or a builder. No surnames. English.
+- A bubble never covers a face, the caption band at the top, or Flow's mark at the bottom right. The kit refuses the last two; faces are checked by eye.
+- To place a bubble in a reel, pull a frame at the moment it appears and read the speaker's head position off it: the animals move.
 
 ## Cast pictures (for carousels and single posts)
 

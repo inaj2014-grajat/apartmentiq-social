@@ -91,3 +91,13 @@ Rule and limits: `CONTENT_RULES.md` section 7. Pictures: `ig-kit/cast/*.jpg`, de
 - Full example to copy: `ig-kit/examples/carousel-with-cast/spec.json`. `test_kit.py` covers it (18/18 on 28 Nov 2026).
 - To add a picture (live chat only, 0 credits): `series/the-flat-hunt/SERIES.md`, section "Cast pictures".
 
+## Speech bubbles (2026-11-28)
+
+Rule: `CONTENT_RULES.md` section 7 item 8. Voices: `series/the-flat-hunt/SERIES.md`, section "Voices".
+
+- Picture slide: `"say": [{"who": "Dhoop", "text": "Not the sun.", "tip": [0.37, 0.80], "box": [0.385, 0.66]}]`. `tip` is the speaker's head and `box` the bubble's centre, as fractions of the picture from its top left.
+- Reel scene: `"say": [{"who": "Dhoop", "text": "Where is my sun?", "at": 0.9, "tip": [330, 1285], "box": [330, 1170]}]`. Pixels of the 1080x1920 frame; `at` is seconds after the cut.
+- `who` must be Meera, Kabir, Dhoop, Chhaya or Gutar. Six words at most. Two bubbles at most.
+- The kit stops if a bubble runs off the picture, sits in a reel's top caption band, or touches the bottom right corner where Flow's mark is. `test_kit.py`: 23/23 on 28 Nov 2026.
+- Always look at the result. The kit cannot tell whether a bubble covers a face.
+

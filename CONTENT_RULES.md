@@ -14,7 +14,7 @@ new, his word wins, and the lesson is added here in the same run.
 
 From the first film brief (2026-11-25): "photo realistic, state of the art graphics.. dont use images from the apartmentiq website.. consider the audiance as retail custmers looking for buying or renting.. the video should start with enaging hook and should be able to retain the audiance throughout".
 
-- **The cast appears in carousels and single posts too, not only in reels.** Rajat, 2026-11-28: "i want these charectors to be used in carousals and posts as well". How: section 7.
+- **The cast appears in carousels and single posts too, not only in reels, and they talk.** Rajat, 2026-11-28: "i want these charectors to be used in carousals and posts as well", then "nice.. we will keep it to thi theme.. and i want charectors to interact (dog and cat to talk in as well)". How: section 7.
 
 ## 2. What the product may claim (read from the live site, 2026-11-27)
 
@@ -75,4 +75,6 @@ The cast is Meera, Kabir, Dhoop the ginger cat, Chhaya the black dog and Gutar t
 6. **Names.** Dhoop, Chhaya, Meera and Kabir may be named in a `sub` line or the caption ("Dhoop the cat", the first time). No surnames. The hook must still make sense to someone who has never seen them.
 7. **Never paint on, crop or cover a picture.** Flow's sparkle mark at its bottom right stays visible. The renderer shows the whole picture.
 
-Worked example: `ig-kit/examples/carousel-with-cast/` (the 1 Dec carousel redrawn with two pictures; not a post). Spec fields: `ig-kit/README.md`.
+8. **The cast talks, the dog and the cat too.** Rajat, 2026-11-28: "i want charectors to interact (dog and cat to talk in as well)". Speech goes in speech bubbles drawn by the kit (`"say"` in the spec), in reels and on picture slides. Six words at most a line, two bubbles at most in a scene or on a slide. Who says what, and what they never say, is in `series/the-flat-hunt/SERIES.md`, section "Voices". Speech is on-screen text only: no voices in the sound unless Rajat asks.
+
+Worked example: `ig-kit/examples/carousel-with-cast/` (a copy of the 1 Dec carousel spec with two pictures and speech). Spec fields: `ig-kit/README.md`.

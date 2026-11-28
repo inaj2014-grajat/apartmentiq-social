@@ -81,6 +81,17 @@ CASES += [
     ("a carousel with no picture still may not claim AI footage", mutate(lambda s: s.update(ai_footage=True)), CAST_CAP, 1, "no cast picture"),
 ]
 
+# 2026-11-28: the cast talks (Rajat: "i want charectors to interact (dog and cat to talk in as well)")
+def says(s):        s["slides"][0]["say"] = [{"who": "Dhoop", "text": "Sun! Mine.", "tip": [0.5, 0.6], "box": [0.5, 0.4]}]
+def stranger(s):    says(s); s["slides"][0]["say"][0]["who"] = "The broker"
+def speech(s):      says(s); s["slides"][0]["say"][0]["text"] = "I would like to give a long talk about the sun"
+def on_mark(s):     says(s); s["slides"][0]["say"][0]["box"] = [0.80, 0.85]
+CASES += [
+    ("a cast picture with a short line of speech passes", mutate_cast(says), CAST_CAP, 0, "RESULT PASS"),
+    ("speech from someone who is not in the cast is refused", mutate_cast(stranger), CAST_CAP, 1, "is not in the cast"),
+    ("a line of speech longer than 6 words is refused", mutate_cast(speech), CAST_CAP, 1, "6 words"),
+]
+
 
 def render(spec):
     with tempfile.TemporaryDirectory() as d:
@@ -93,6 +104,8 @@ def render(spec):
 RENDER_CASES = [  # name, spec, expected exit code (0 or non-zero), text that must appear, slide file that must exist
     ("render: a hook with a cast picture is drawn", CAST_SPEC, 0, "01-hook.jpg", "01-hook.jpg"),
     ("render: a picture that is not in the cast library is refused", mutate_cast(not_cast), 1, "not in the cast library", None),
+    ("render: a speech bubble on a cast picture is drawn", mutate_cast(says), 0, "01-hook.jpg", "01-hook.jpg"),
+    ("render: a speech bubble over Flow's mark is refused", mutate_cast(on_mark), 1, "covers Flow's mark", None),
 ]
 
 bad = 0

@@ -37,6 +37,11 @@ SPEC (reel)
    "end_seconds": 5, "sources": [...]}
 "position": "top" when the subject or the light you want seen is in the lower half.
 "then" swaps to a second caption inside the same scene (used for a two-part sentence).
+"say": up to 2 speech bubbles in a scene. Each pops in at "at" seconds and stays to the cut:
+  [{"who": "Dhoop", "text": "Where is my sun?", "at": 0.9, "tip": [330, 1290], "box": [340, 1185]}]
+  tip = the speaker's head, box = the bubble's centre, in pixels of the 1080x1920 frame. Find them by
+  pulling a frame at that moment and looking: the animals move. 6 words at most. Keep bubbles below
+  y 590 when the caption is at the top, and out of the bottom right corner (Flow's mark).
 """
 import json, math, os, subprocess, sys
 import numpy as np
@@ -45,7 +50,7 @@ from scipy.signal import butter, sosfilt, fftconvolve
 from scipy.io import wavfile
 
 sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
-from render import F, MONO, diamond, spans, text_w, draw_line, NAVY, EMER, ACCENT, WHITE, ONNAVY, ONNAVY_M  # noqa: E402
+from render import F, MONO, diamond, spans, text_w, draw_line, bubble, NAVY, EMER, ACCENT, WHITE, ONNAVY, ONNAVY_M  # noqa: E402
 
 W, H, FPS = 1080, 1920, 24
 TOP, LOW = 400, 1350
@@ -161,6 +166,22 @@ def build_scene(k, sc, src_dir, work, first, last):
         g.append(f + f"[c{i}]")
         y = "0" if t_in is None else f"if(lt(t,{t_in}),26,if(lt(t,{t_in + 0.28}),26*(1-(t-{t_in})/0.28),0))"
         g.append(f"[{lastv}][c{i}]overlay=x=0:y='{y}':format=auto[v{2 + i}]"); lastv = f"v{2 + i}"
+    # speech bubbles (2026-11-28): each pops in at its "at" time and stays to the end of the scene
+    says = sc.get("say", [])
+    assert len(says) <= 2, f"scene {k + 1}: 2 speech bubbles at most"
+    for j, b in enumerate(says):
+        layer = Image.new("RGBA", (W, H), (0, 0, 0, 0))
+        x0, y0, x1, y1 = bubble(layer, b["who"], b["text"], tuple(b["tip"]), tuple(b["box"]), 52, keep_out=(840, 1640, W, H))
+        if top:
+            assert y0 > 590, f"scene {k + 1}: speech bubble {b['text']!r} sits in the caption band at the top: move its box down"
+        assert 0.2 <= b["at"] <= dur - 1.2, f"scene {k + 1}: speech bubble {b['text']!r} needs at least 1.2 s on screen"
+        layer.save(f"{work}/say{k}_{j}.png")
+        idx = 2 + len(caps) + j
+        inputs += ["-framerate", str(FPS), "-i", f"{work}/say{k}_{j}.png"]
+        t = b["at"]
+        g.append(still(idx, dur) + f",fade=t=in:st={t}:d=0.16:alpha=1[b{j}]")
+        y = f"if(lt(t,{t}),18,if(lt(t,{t + 0.16}),18*(1-(t-{t})/0.16),0))"
+        g.append(f"[{lastv}][b{j}]overlay=x=0:y='{y}':format=auto[w{j}]"); lastv = f"w{j}"
     tail = f"[{lastv}]format=yuv420p"
     if last:
         tail += f",fade=t=out:st={dur - 0.35}:d=0.35:color=0x0b1f33"

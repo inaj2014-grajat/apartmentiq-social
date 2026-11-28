@@ -12,6 +12,9 @@ SPEC (see ig-kit/README.md for a full example)
 Slide types and their fields:
   hook     kicker, title (list of lines), sub. Optional image: a cast picture name; the slide is then drawn like a scene
   scene    image (a name from ig-kit/cast/cast.json), kicker, title (1 to 3 short lines), sub (one short line)
+           say: up to 2 speech bubbles on the picture (hook with an image takes it too):
+           [{"who": "Dhoop", "text": "Not the sun.", "tip": [0.37, 0.79], "box": [0.36, 0.66]}]
+           tip = the speaker's head, box = the bubble's centre, both as fractions of the picture.
   compare  kicker, title, left {label, value, tone}, right {label, value, tone}, note
   shadow   kicker, title, height_m, items [{label, value, shadow_m, tone}], note
   fact     kicker, value, label, sub
@@ -177,6 +180,43 @@ def cast_image(name):
     return im
 
 
+CAST = ["Meera", "Kabir", "Dhoop", "Chhaya", "Gutar"]
+
+
+def bubble(im, who, text, tip, box, size, keep_out=None):
+    """Draw one speech bubble on an RGBA image. tip = (x, y) where the tail points (the speaker's head).
+    box = (x, y) centre of the bubble. keep_out = (x0, y0, x1, y1) the bubble may not touch (Flow's mark).
+    Returns the bubble's rectangle. 2026-11-28, Rajat: the characters talk, the dog and the cat too."""
+    assert who in CAST, f"speaker {who!r} is not in the cast: {', '.join(CAST)}"
+    assert len(text.split()) <= 6, f"a line of speech takes 6 words at most: {text!r}"
+    d = ImageDraw.Draw(im)
+    ft = F("Bold", size); fl = MONO("SemiBold", int(size * 0.5)); tr = size * 0.06
+    lw = sum(d.textlength(c, font=fl) + tr for c in who.upper()) - tr
+    tw = d.textlength(text, font=ft)
+    px, py = int(size * 0.62), int(size * 0.42)
+    w = max(tw, lw) + 2 * px; h = int(size * 0.5) + int(size * 0.24) + int(size * 1.16) + 2 * py
+    x0 = box[0] - w / 2; y0 = box[1] - h / 2; x1 = x0 + w; y1 = y0 + h
+    assert x0 >= 16 and y0 >= 16 and x1 <= im.size[0] - 16 and y1 <= im.size[1] - 16, f"speech bubble {text!r} runs off the picture: move its box"
+    if keep_out:
+        kx0, ky0, kx1, ky1 = keep_out
+        assert x1 < kx0 or x0 > kx1 or y1 < ky0 or y0 > ky1, f"speech bubble {text!r} covers Flow's mark at the bottom right: move its box"
+    # tail: from the edge of the box nearest the tip
+    cx = min(max(tip[0], x0 + 40), x1 - 40); cy = min(max(tip[1], y0 + 30), y1 - 30)
+    if tip[1] > y1 or tip[1] < y0:
+        base = [(cx - 22, y1 - 2 if tip[1] > y1 else y0 + 2), (cx + 22, y1 - 2 if tip[1] > y1 else y0 + 2)]
+    else:
+        base = [(x1 - 2 if tip[0] > x1 else x0 + 2, cy - 22), (x1 - 2 if tip[0] > x1 else x0 + 2, cy + 22)]
+    sh = Image.new("RGBA", im.size, (0, 0, 0, 0)); ds = ImageDraw.Draw(sh)
+    ds.rounded_rectangle([x0, y0 + 6, x1, y1 + 6], radius=int(size * 0.6), fill=(4, 12, 22, 120))
+    im.alpha_composite(sh.filter(ImageFilter.GaussianBlur(12)))
+    d = ImageDraw.Draw(im)
+    d.polygon(base + [tuple(tip)], fill=SURF)
+    d.rounded_rectangle([x0, y0, x1, y1], radius=int(size * 0.6), fill=SURF)
+    tracked(d, x0 + px, y0 + py, who.upper(), fl, PRIMARY, tr)
+    d.text((x0 + px, y0 + py + int(size * 0.5) + int(size * 0.18)), text, font=ft, fill=INK)
+    return (x0, y0, x1, y1)
+
+
 def s_scene(s, i, n):
     """Dark slide: a cast picture as a card, then the title, then one short line."""
     im, d = frame(True, s.get("kicker"), i, n)
@@ -187,6 +227,14 @@ def s_scene(s, i, n):
     im.paste(pic, (M, top), mask)
     d = ImageDraw.Draw(im)
     d.rounded_rectangle([M, top, M + cw - 1, top + ch - 1], radius=24, outline=(255, 255, 255, 46), width=2)
+    says = s.get("say", [])
+    assert len(says) <= 2, "a picture takes 2 speech bubbles at most"
+    if says:  # tip and box are fractions of the picture: [0..1, 0..1] from its top left
+        layer = Image.new("RGBA", (cw, ch), (0, 0, 0, 0))
+        for b in says:
+            bubble(layer, b["who"], b["text"], (b["tip"][0] * cw, b["tip"][1] * ch), (b["box"][0] * cw, b["box"][1] * ch),
+                   34, keep_out=(cw * 0.80, ch * 0.74, cw, ch))
+        im.alpha_composite(layer, (M, top)); d = ImageDraw.Draw(im)
     y = title_block(d, s["title"], top + ch + 44, s.get("size", 68), WHITE, EMER)
     if s.get("sub"):
         y = para(d, s["sub"], y + 18, 38, ONNAVY, EMER)

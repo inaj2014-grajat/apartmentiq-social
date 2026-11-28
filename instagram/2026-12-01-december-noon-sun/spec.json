@@ -3,17 +3,31 @@
  "pillar": "sun-fact",
  "publish_date": "2026-12-01",
  "slug": "december-noon-sun",
- "ai_footage": false,
+ "ai_footage": true,
  "slides": [
   {
    "type": "hook",
    "kicker": "SUN FACTS · NOIDA",
    "title": [
-    "In December",
-    "the noon sun sits",
-    "only **38°** high."
+    "In December the noon sun",
+    "sits only **38°** high."
    ],
-   "sub": "In June it is almost overhead. That gap changes how far every shadow reaches."
+   "sub": "In June it is almost overhead. That gap changes how far every shadow reaches.",
+   "image": "balcony_tall_tower",
+   "say": [
+    {
+     "who": "Dhoop",
+     "text": "Who moved the sun?",
+     "tip": [
+      0.535,
+      0.79
+     ],
+     "box": [
+      0.555,
+      0.905
+     ]
+    }
+   ]
   },
   {
    "type": "compare",
@@ -57,6 +71,42 @@
     }
    ],
    "note": "Noon shadow of a 100 m tower on flat ground. Drawn to scale."
+  },
+  {
+   "type": "scene",
+   "image": "winter_lamp",
+   "kicker": "WHAT IT MEANS",
+   "title": [
+    "A flat bright in summer",
+    "can be **shaded in winter.**"
+   ],
+   "sub": "It happens when a tall neighbour stands to the south.",
+   "say": [
+    {
+     "who": "Meera",
+     "text": "Lamp on at noon?",
+     "tip": [
+      0.19,
+      0.3
+     ],
+     "box": [
+      0.25,
+      0.12
+     ]
+    },
+    {
+     "who": "Dhoop",
+     "text": "Not the sun.",
+     "tip": [
+      0.37,
+      0.8
+     ],
+     "box": [
+      0.385,
+      0.66
+     ]
+    }
+   ]
   },
   {
    "type": "list",
@@ -140,5 +190,6 @@
    "display": "21 JUN",
    "given": "date label"
   }
- ]
+ ],
+ "revision": 2
 }

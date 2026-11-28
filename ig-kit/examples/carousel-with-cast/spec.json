@@ -13,7 +13,21 @@
     "sits only **38°** high."
    ],
    "sub": "In June it is almost overhead. That gap changes how far every shadow reaches.",
-   "image": "balcony_tall_tower"
+   "image": "balcony_tall_tower",
+   "say": [
+    {
+     "who": "Dhoop",
+     "text": "Who moved the sun?",
+     "tip": [
+      0.535,
+      0.79
+     ],
+     "box": [
+      0.555,
+      0.905
+     ]
+    }
+   ]
   },
   {
    "type": "compare",
@@ -66,7 +80,33 @@
     "A flat bright in summer",
     "can be **shaded in winter.**"
    ],
-   "sub": "It happens when a tall neighbour stands to the south."
+   "sub": "It happens when a tall neighbour stands to the south.",
+   "say": [
+    {
+     "who": "Meera",
+     "text": "Lamp on at noon?",
+     "tip": [
+      0.19,
+      0.3
+     ],
+     "box": [
+      0.25,
+      0.12
+     ]
+    },
+    {
+     "who": "Dhoop",
+     "text": "Not the sun.",
+     "tip": [
+      0.37,
+      0.8
+     ],
+     "box": [
+      0.385,
+      0.66
+     ]
+    }
+   ]
   },
   {
    "type": "list",

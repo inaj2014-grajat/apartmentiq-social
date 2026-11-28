@@ -201,6 +201,24 @@ def check_spec(spec):
             fail("the first scene must carry the hook text from frame 1")
 
 
+CAST = ["Meera", "Kabir", "Dhoop", "Chhaya", "Gutar"]
+
+
+def check_say(spec):
+    """Speech bubbles (2026-11-28). The words are checked like any other text on the post; this checks the shape."""
+    for k, part in enumerate(spec.get("slides", []) + spec.get("scenes", []), 1):
+        says = part.get("say", [])
+        if len(says) > 2:
+            fail(f"part {k}: 2 speech bubbles at most")
+        for b in says:
+            if b.get("who") not in CAST:
+                fail(f"part {k}: speaker {b.get('who')!r} is not in the cast ({', '.join(CAST)})")
+            if len(str(b.get("text", "")).split()) > 6:
+                fail(f"part {k}: a line of speech takes 6 words at most: {b.get('text')!r}")
+            if not b.get("text"):
+                fail(f"part {k}: a speech bubble has no text")
+
+
 def check_caption(cap, spec):
     if len(cap) > 2200:
         fail(f"caption is {len(cap)} characters; Instagram's limit is 2,200")
@@ -239,6 +257,7 @@ def main():
     spec = json.load(open(a.spec, encoding="utf-8"))
     cap = open(a.caption, encoding="utf-8").read()
     check_spec(spec)
+    check_say(spec)
     backed = check_sources(spec)
     body = list(strings(spec.get("slides", []))) + list(strings(spec.get("scenes", []))) + list(strings(spec.get("end", {})))
     check_numbers(body, backed, "slides")

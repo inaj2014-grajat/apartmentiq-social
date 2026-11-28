@@ -5,14 +5,14 @@
  "slug": "flat-hunt-ep1-sample-flat",
  "series": "The Flat Hunt",
  "episode": 1,
- "revision": 3,
+ "revision": 4,
  "ai_footage": true,
  "end_seconds": 5,
  "scenes": [
   {
    "clip": "clips/s1_sample_flat.mp4",
    "in": 0.4,
-   "frames": 84,
+   "frames": 108,
    "position": "top",
    "mood": "bright",
    "ambience_db": 6,
@@ -22,12 +22,40 @@
     "is sunny.",
     "**Will yours be?**"
    ],
-   "size": 88
+   "size": 88,
+   "say": [
+    {
+     "who": "Meera",
+     "text": "I love it!",
+     "at": 0.8,
+     "tip": [
+      668,
+      770
+     ],
+     "box": [
+      470,
+      672
+     ]
+    },
+    {
+     "who": "Dhoop",
+     "text": "Sun! Mine.",
+     "at": 2.4,
+     "tip": [
+      352,
+      1405
+     ],
+     "box": [
+      330,
+      1290
+     ]
+    }
+   ]
   },
   {
    "clip": "clips/s2_shaded_empty_flat.mp4",
    "in": 0.4,
-   "frames": 108,
+   "frames": 120,
    "position": "top",
    "mood": "dark",
    "ambience_db": 6,
@@ -36,12 +64,40 @@
     "Same layout.",
     "**Other side of the tower.**"
    ],
-   "size": 78
+   "size": 78,
+   "say": [
+    {
+     "who": "Dhoop",
+     "text": "Where is my sun?",
+     "at": 0.9,
+     "tip": [
+      330,
+      1285
+     ],
+     "box": [
+      330,
+      1170
+     ]
+    },
+    {
+     "who": "Chhaya",
+     "text": "Shade! Mine.",
+     "at": 2.6,
+     "tip": [
+      610,
+      1585
+     ],
+     "box": [
+      580,
+      1690
+     ]
+    }
+   ]
   },
   {
    "clip": "clips/s3_winter_lamp.mp4",
    "in": 0.4,
-   "frames": 108,
+   "frames": 120,
    "position": "top",
    "mood": "dark",
    "ambience_db": 6,
@@ -51,7 +107,35 @@
     "a **different flat.**"
    ],
    "sub": "Dhoop the cat naps under a lamp now",
-   "size": 80
+   "size": 80,
+   "say": [
+    {
+     "who": "Meera",
+     "text": "Lamp on at noon?",
+     "at": 0.9,
+     "tip": [
+      880,
+      845
+     ],
+     "box": [
+      790,
+      735
+     ]
+    },
+    {
+     "who": "Dhoop",
+     "text": "It's all I have.",
+     "at": 2.6,
+     "tip": [
+      545,
+      1370
+     ],
+     "box": [
+      500,
+      1255
+     ]
+    }
+   ]
   },
   {
    "clip": "clips/s4_home_in_the_sun.mp4",
@@ -77,7 +161,35 @@
     ],
     "sub": "hour by hour · season by season",
     "size": 80
-   }
+   },
+   "say": [
+    {
+     "who": "Dhoop",
+     "text": "Sun for me.",
+     "at": 0.6,
+     "tip": [
+      330,
+      1385
+     ],
+     "box": [
+      270,
+      1270
+     ]
+    },
+    {
+     "who": "Chhaya",
+     "text": "Shade for me.",
+     "at": 1.5,
+     "tip": [
+      800,
+      1385
+     ],
+     "box": [
+      800,
+      1270
+     ]
+    }
+   ]
   }
  ],
  "end": {
