@@ -69,7 +69,7 @@ Calm and minimal. The renderer holds these; do not restyle a post by hand.
 
 The cast is Meera, Kabir, Dhoop the ginger cat, Chhaya the black dog and Gutar the pigeon (`series/the-flat-hunt/SERIES.md`). Every new carousel and single post shows them. Posts Rajat approved before this date stay as approved unless he says to redo them.
 
-1. **Slide 1 carries a cast picture.** Give the hook slide `"image": "<name>"`. The picture sits above the hook.
+1. **Slide 1 carries a cast picture.** Give the hook slide `"image": "<name>"`. The picture sits above the hook. This holds for every pillar, including the first-Saturday "How it works" post: "drawn graphics only" there means no app or website screens, not no cast.
 2. **One more picture slide in the middle**, type `scene`, where the post says what the point means for a flat. Two or three pictures in a post at most. Number slides (`compare`, `shadow`, `fact`) and the `list` slide stay as drawn. The end card does not change.
 3. **Pictures come only from `ig-kit/cast/`.** `cast.json` says what each one shows and what it is for. Open the .jpg and look before using it. A scheduled run cannot make pictures: it picks from this folder. If none fits, use the nearest one and write `cast: no picture fits <topic>` in Run Log, so a new one gets made in a live chat.
 4. **The picture must agree with the words.** A slide about a flat with no sun does not get a picture with a sun patch, and the other way round. `cast.json` has a `light` field for this.
