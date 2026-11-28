@@ -1,0 +1,203 @@
+{
+ "format": "carousel",
+ "pillar": "sun-fact",
+ "publish_date": "2026-12-15",
+ "slug": "december-shadow-reach",
+ "revision": 2,
+ "ai_footage": true,
+ "slides": [
+  {
+   "type": "hook",
+   "image": "garden_walk",
+   "kicker": "THE MORNING WALK",
+   "size": 64,
+   "title": [
+    "Why is the December",
+    "morning walk so cold?",
+    "**Look at the shadows.**"
+   ],
+   "say": [
+    {
+     "who": "Meera",
+     "text": "Walk faster, I'm freezing.",
+     "tip": [
+      0.53,
+      0.42
+     ],
+     "box": [
+      0.44,
+      0.2
+     ]
+    },
+    {
+     "who": "Dhoop",
+     "text": "You left the sun.",
+     "tip": [
+      0.73,
+      0.655
+     ],
+     "box": [
+      0.79,
+      0.5
+     ]
+    }
+   ]
+  },
+  {
+   "type": "shadow",
+   "kicker": "A DECEMBER MORNING",
+   "title": [
+    "A **30 m** building.",
+    "An **85 m** shadow."
+   ],
+   "height_m": 30,
+   "items": [
+    {
+     "label": "09:00",
+     "value": "85 m",
+     "shadow_m": 85,
+     "tone": "winter"
+    },
+    {
+     "label": "12:00",
+     "value": "39 m",
+     "shadow_m": 39,
+     "tone": "winter"
+    }
+   ],
+   "note": "Shadow of a 30 m building on 21 Dec, flat ground. Drawn to scale."
+  },
+  {
+   "type": "compare",
+   "kicker": "THE SAME DAY",
+   "title": [
+    "By mid-afternoon",
+    "it is **long again.**"
+   ],
+   "left": {
+    "label": "12:00",
+    "value": "39 m",
+    "tone": "winter"
+   },
+   "right": {
+    "label": "15:00",
+    "value": "64 m",
+    "tone": "winter"
+   },
+   "note": "It points north-west in the morning and north-east in the afternoon."
+  },
+  {
+   "type": "scene",
+   "image": "balcony_plants",
+   "kicker": "BACK HOME",
+   "title": [
+    "A building that looks far",
+    "**can still reach you.**"
+   ],
+   "sub": "Lower floors are usually shaded first, and for longest.",
+   "say": [
+    {
+     "who": "Kabir",
+     "text": "That tower is so far.",
+     "tip": [
+      0.775,
+      0.29
+     ],
+     "box": [
+      0.74,
+      0.13
+     ]
+    },
+    {
+     "who": "Meera",
+     "text": "Its shadow still visits.",
+     "tip": [
+      0.435,
+      0.345
+     ],
+     "box": [
+      0.28,
+      0.22
+     ]
+    }
+   ]
+  },
+  {
+   "type": "list",
+   "kicker": "SO BEFORE YOU DECIDE",
+   "title": [
+    "In December, look",
+    "**where the sun is.**"
+   ],
+   "items": [
+    "Morning: look south-east from the balcony.",
+    "Noon: look south.",
+    "Afternoon: look south-west.",
+    "Anything tall there can shade the flat."
+   ]
+  },
+  {
+   "type": "end",
+   "title": [
+    "See the sun your flat",
+    "**actually gets.**"
+   ],
+   "cta": "Free report during pre-launch",
+   "url": "apartmentiq.in",
+   "sources": [
+    "Shadow lengths: NOAA solar position equations,",
+    "Noida 28.54°N, flat ground, clear sky. Not a flat's sun hours."
+   ]
+  }
+ ],
+ "sources": [
+  {
+   "display": "85 m",
+   "script": "sun_facts.py",
+   "args": "--place noida --date 2026-12-21 --time 09:00 --height 30",
+   "field": "shadow_m",
+   "format": "{} m"
+  },
+  {
+   "display": "39 m",
+   "script": "sun_facts.py",
+   "args": "--place noida --date 2026-12-21 --time 12:00 --height 30",
+   "field": "shadow_m",
+   "format": "{} m"
+  },
+  {
+   "display": "64 m",
+   "script": "sun_facts.py",
+   "args": "--place noida --date 2026-12-21 --time 15:00 --height 30",
+   "field": "shadow_m",
+   "format": "{} m"
+  },
+  {
+   "display": "30 m",
+   "given": "example building height chosen for the drawing; an input, not a measurement"
+  },
+  {
+   "display": "09:00",
+   "given": "clock time fed to sun_facts.py; an input"
+  },
+  {
+   "display": "12:00",
+   "given": "clock time fed to sun_facts.py; an input"
+  },
+  {
+   "display": "15:00",
+   "given": "clock time fed to sun_facts.py; an input"
+  },
+  {
+   "display": "28.54°N",
+   "script": "sun_facts.py",
+   "args": "--place noida --date 2026-12-21",
+   "field": "latitude_deg",
+   "format": "{:.2f}°N"
+  },
+  {
+   "display": "21 DEC",
+   "given": "date label"
+  }
+ ]
+}

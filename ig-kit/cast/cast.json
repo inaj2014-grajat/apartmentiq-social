@@ -672,7 +672,7 @@
    "shows": "Daily life. A winter morning on their balcony. Meera waters the potted plants. Dhoop the cat sits among the pots with his eyes shut. Kabir stands in the doorway with tea, looking out at a tower across the lawn with the low sun beside it. Chhaya the dog sleeps on the floor.",
    "light": "low sun beside a distant tower",
    "use_for": "a tower that looks far away; morning shadows; plants and winter light; mornings at home",
-   "note": "Made 2026-11-28 in Flow (Nano Banana 2.1, 0 credits). This file is a 968 x 725 screen capture of the picture in Flow's viewer, not the downloaded original (1152 x 864). Replace it with the original when a folder on Rajat's PC is connected.",
+   "note": "Made 2026-11-28 in Flow (Nano Banana 2.1, 0 credits). This file is a 968 x 725 screen capture of the picture in Flow's viewer, not the downloaded original (1152 x 864). Replace it with the original when a folder on Rajat's PC is connected. Not on any post: it was taken off the 15 Dec post because the balcony is not in shadow, so it did not show the words under it.",
    "bubbles": {
     "Meera": {
      "tip": [
@@ -792,6 +792,36 @@
      "box": [
       0.22,
       0.72
+     ]
+    }
+   }
+  },
+  {
+   "name": "far_tower_shadow",
+   "file": "far_tower_shadow.jpg",
+   "shows": "Daily life. A winter morning on their low-floor balcony, looking out. A tall tower stands far away across a wide lawn with the sun hidden behind it. Its long shadow runs across the lawn right up to the balcony, which is in shade; the grass on both sides is sunlit. Kabir points at the tower. Meera stands beside him in a shawl with tea. Dhoop the cat sits staring out at the sunlit grass. Chhaya the dog sleeps on the cool floor.",
+   "light": "shade; the sun is behind a distant tower",
+   "use_for": "a far building whose shadow still reaches the flat; long winter morning shadows; low floors",
+   "note": "Made 2026-11-28 in Flow (Nano Banana 2.1, 0 credits) to replace balcony_plants on the 15 Dec post, which did not show the shadow. A 968 x 725 screen capture of the picture in Flow's viewer, not the downloaded original.",
+   "bubbles": {
+    "Kabir": {
+     "tip": [
+      0.385,
+      0.335
+     ],
+     "box": [
+      0.25,
+      0.2
+     ]
+    },
+    "Meera": {
+     "tip": [
+      0.3,
+      0.375
+     ],
+     "box": [
+      0.22,
+      0.21
      ]
     }
    }

@@ -3,7 +3,7 @@
  "pillar": "sun-fact",
  "publish_date": "2026-12-15",
  "slug": "december-shadow-reach",
- "revision": 2,
+ "revision": 3,
  "ai_footage": true,
  "slides": [
   {
@@ -88,7 +88,7 @@
   },
   {
    "type": "scene",
-   "image": "balcony_plants",
+   "image": "far_tower_shadow",
    "kicker": "BACK HOME",
    "title": [
     "A building that looks far",
@@ -98,26 +98,14 @@
    "say": [
     {
      "who": "Kabir",
-     "text": "That tower is so far.",
+     "text": "But it is so far away!",
      "tip": [
-      0.775,
-      0.29
+      0.385,
+      0.335
      ],
      "box": [
-      0.74,
-      0.13
-     ]
-    },
-    {
-     "who": "Meera",
-     "text": "Its shadow still visits.",
-     "tip": [
-      0.435,
-      0.345
-     ],
-     "box": [
-      0.28,
-      0.22
+      0.25,
+      0.2
      ]
     }
    ]

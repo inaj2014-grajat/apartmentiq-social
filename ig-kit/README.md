@@ -50,6 +50,7 @@ Open `contact.jpg` and answer each one. Any "no" goes back to the spec.
 6. Reels: is Flow's sparkle watermark (bottom right) uncovered and uncropped?
 7. Reels: no garbled letters, no card or sign with fake text, no broken hands, no exaggerated faces.
 8. Is every claim one the live site makes? If you are not sure, leave it out.
+9. Does each picture show what the words under it say? Not just "does not contradict them". If no, remake the picture or change the words. Do not push it with a note (`CONTENT_RULES.md` lesson 14).
 
 ## Making reel footage in Google Flow (live sitting, through Chrome)
 

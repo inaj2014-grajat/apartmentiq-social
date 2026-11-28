@@ -117,6 +117,7 @@ Why: a check that has only ever been seen passing has not been tested.
 - Gave a character a line that explained the picture.
 - Updated a row's fields for a new revision and left the old pictures in the page body, so Rajat was looking at the old version.
 - Reused the same six cast pictures across five posts and told Rajat about it as a caveat. A known flaw is fixed before the work is shown, not listed under it.
+- Did the same again an hour later: sent a slide whose picture did not show its words and called it "the loosest picture" in the report. Rajat: "If you know there is a loose picture why do we have it". Remaking it took one free still.
 - Built carousels as a lesson with one illustration. He wanted a funny story from daily life, with the fact after it.
 - Asked a model to draw a moving shadow on real buildings from a reference image, twice. It cannot. A scale model or a time-lapse prompt works.
 
