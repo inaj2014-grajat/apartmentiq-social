@@ -3,69 +3,93 @@
  "pillar": "how-it-works",
  "publish_date": "2026-12-05",
  "slug": "what-a-sun-score-is",
+ "revision": 2,
  "ai_footage": true,
  "slides": [
   {
    "type": "hook",
-   "image": "visit_sunny",
-   "kicker": "HOW IT WORKS",
-   "size": 62,
+   "image": "sun_corner",
+   "kicker": "A WINTER SUNDAY",
+   "size": 64,
    "title": [
-    "\"Sun-facing\" is a word.",
-    "A **Sun Score** is a number."
+    "Every winter the whole",
+    "family fights for",
+    "**one patch of sun.**"
    ],
-   "sub": "It counts the hours of direct sun a flat gets on one winter day.",
    "say": [
     {
      "who": "Kabir",
-     "text": "They said sun-facing.",
+     "text": "Move over, Dhoop.",
      "tip": [
-      0.66,
-      0.29
+      0.585,
+      0.375
      ],
      "box": [
-      0.754,
-      0.17
+      0.72,
+      0.21
      ]
     },
     {
      "who": "Dhoop",
-     "text": "I'll be the judge.",
+     "text": "I was here first.",
      "tip": [
-      0.41,
-      0.77
+      0.44,
+      0.83
      ],
      "box": [
-      0.21,
-      0.64
+      0.25,
+      0.89
+     ]
+    }
+   ]
+  },
+  {
+   "type": "scene",
+   "image": "chasing_sun",
+   "kicker": "A LITTLE LATER",
+   "title": [
+    "Then the patch moves.",
+    "**So does everyone.**"
+   ],
+   "sub": "How long does the sun stay? Most people find out after they move in.",
+   "say": [
+    {
+     "who": "Dhoop",
+     "text": "Follow me.",
+     "tip": [
+      0.175,
+      0.81
+     ],
+     "box": [
+      0.17,
+      0.63
+     ]
+    },
+    {
+     "who": "Kabir",
+     "text": "I carry his cushion now.",
+     "tip": [
+      0.635,
+      0.29
+     ],
+     "box": [
+      0.72,
+      0.13
      ]
     }
    ]
   },
   {
    "type": "fact",
-   "kicker": "THE SUN SCORE",
+   "kicker": "THERE IS A NUMBER FOR IT",
    "value": "21 DEC",
-   "label": "Hours of direct sun your flat gets on this one day.",
-   "sub": "Counted for your exact flat, hour by hour."
-  },
-  {
-   "type": "list",
-   "kicker": "WHY THAT DAY",
-   "title": [
-    "The hardest day",
-    "for **sunlight.**"
-   ],
-   "items": [
-    "The days are at their shortest.",
-    "The noon sun is at its lowest.",
-    "Noon shadows are at their longest."
-   ]
+   "label": "The Sun Score: hours of direct sun a flat gets on this one day.",
+   "sub": "Counted when the days are at their shortest and the noon sun is at its lowest."
   },
   {
    "type": "scene",
-   "image": "no_sun_patch",
-   "kicker": "WHAT IT MEANS",
+   "image": "upstairs_sun",
+   "kicker": "SAME TOWER",
    "size": 62,
    "title": [
     "Two flats in one tower",
@@ -75,41 +99,41 @@
    "say": [
     {
      "who": "Dhoop",
-     "text": "Low marks from me.",
+     "text": "Upstairs has my sun.",
      "tip": [
-      0.45,
-      0.72
+      0.37,
+      0.765
      ],
      "box": [
-      0.232,
-      0.62
+      0.25,
+      0.5
      ]
     },
     {
      "who": "Chhaya",
-     "text": "Full marks from me.",
+     "text": "I like it here.",
      "tip": [
-      0.66,
-      0.68
+      0.61,
+      0.895
      ],
      "box": [
-      0.773,
-      0.56
+      0.8,
+      0.585
      ]
     }
    ]
   },
   {
    "type": "list",
-   "kicker": "HOW TO USE IT",
+   "kicker": "BEFORE YOU PICK A FLAT",
    "title": [
-    "One number to",
-    "**compare flats.**"
+    "Compare flats by",
+    "their **Sun Score.**"
    ],
    "items": [
     "Tell us the society, the floor and the flat.",
     "We trace the sun on that exact flat.",
-    "Compare the Sun Scores of the flats you like."
+    "Compare the scores before you sign."
    ]
   },
   {

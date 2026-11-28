@@ -3,50 +3,52 @@
  "pillar": "sun-fact",
  "publish_date": "2026-12-08",
  "slug": "december-sunset",
+ "revision": 2,
  "ai_footage": true,
  "slides": [
   {
    "type": "hook",
-   "image": "dhoop_in_the_sun",
-   "kicker": "SUN FACTS · NOIDA",
+   "image": "home_at_dusk",
+   "kicker": "A DECEMBER WEEKDAY",
+   "size": 64,
    "title": [
-    "On 21 December",
-    "sunset is at **17:28**"
+    "Home from work",
+    "in December.",
+    "**The sun left first.**"
    ],
-   "sub": "On 21 June it is at 19:21 by the clock. Winter leaves a flat less daylight to catch.",
    "say": [
     {
-     "who": "Dhoop",
-     "text": "Nobody touch my daylight.",
+     "who": "Kabir",
+     "text": "Dark already?",
      "tip": [
-      0.33,
-      0.72
+      0.835,
+      0.295
      ],
      "box": [
-      0.293,
-      0.58
+      0.8,
+      0.12
      ]
     },
     {
-     "who": "Chhaya",
-     "text": "All yours.",
+     "who": "Dhoop",
+     "text": "You missed it. Again.",
      "tip": [
-      0.71,
-      0.69
+      0.175,
+      0.71
      ],
      "box": [
-      0.77,
-      0.56
+      0.27,
+      0.9
      ]
     }
    ]
   },
   {
    "type": "compare",
-   "kicker": "SUNSET",
+   "kicker": "SUNSET OVER NOIDA",
    "title": [
-    "Same balcony.",
-    "A much **earlier sunset.**"
+    "In June you still get",
+    "**an evening of sun.**"
    ],
    "left": {
     "label": "21 DEC",
@@ -62,7 +64,7 @@
   },
   {
    "type": "compare",
-   "kicker": "SUNRISE",
+   "kicker": "SUNRISE OVER NOIDA",
    "title": [
     "And the sun",
     "**rises later** too."
@@ -81,36 +83,36 @@
   },
   {
    "type": "scene",
-   "image": "winter_lamp",
-   "kicker": "WHAT IT MEANS",
+   "image": "laundry_in_the_sun",
+   "kicker": "COME THE WEEKEND",
    "title": [
-    "A short day leaves",
-    "**less sun to go round.**"
+    "Everyone wants",
+    "**the same sun.**"
    ],
-   "sub": "If a neighbour shades the sunny hours, the lamp can come on early.",
+   "sub": "The cat, the washing and you. A short day leaves less to go round.",
    "say": [
     {
-     "who": "Kabir",
-     "text": "Their side gets the sun.",
+     "who": "Meera",
+     "text": "Dhoop, the clothes need sun.",
      "tip": [
-      0.55,
-      0.19
+      0.57,
+      0.39
      ],
      "box": [
-      0.74,
-      0.1
+      0.42,
+      0.12
      ]
     },
     {
      "who": "Dhoop",
-     "text": "I get the lamp.",
+     "text": "So do I.",
      "tip": [
-      0.37,
-      0.8
+      0.475,
+      0.825
      ],
      "box": [
-      0.385,
-      0.66
+      0.29,
+      0.73
      ]
     }
    ]
@@ -120,7 +122,7 @@
    "kicker": "SO BEFORE YOU DECIDE",
    "title": [
     "Check the hours",
-    "that **matter to you.**"
+    "you are **at home.**"
    ],
    "items": [
     "Visit once in the morning and once near sunset.",

@@ -1,0 +1,186 @@
+{
+ "format": "carousel",
+ "pillar": "sun-fact",
+ "publish_date": "2026-12-08",
+ "slug": "december-sunset",
+ "ai_footage": true,
+ "slides": [
+  {
+   "type": "hook",
+   "image": "dhoop_in_the_sun",
+   "kicker": "SUN FACTS · NOIDA",
+   "title": [
+    "On 21 December",
+    "sunset is at **17:28**"
+   ],
+   "sub": "On 21 June it is at 19:21 by the clock. Winter leaves a flat less daylight to catch.",
+   "say": [
+    {
+     "who": "Dhoop",
+     "text": "Nobody touch my daylight.",
+     "tip": [
+      0.33,
+      0.72
+     ],
+     "box": [
+      0.293,
+      0.58
+     ]
+    },
+    {
+     "who": "Chhaya",
+     "text": "All yours.",
+     "tip": [
+      0.71,
+      0.69
+     ],
+     "box": [
+      0.77,
+      0.56
+     ]
+    }
+   ]
+  },
+  {
+   "type": "compare",
+   "kicker": "SUNSET",
+   "title": [
+    "Same balcony.",
+    "A much **earlier sunset.**"
+   ],
+   "left": {
+    "label": "21 DEC",
+    "value": "17:28",
+    "tone": "winter"
+   },
+   "right": {
+    "label": "21 JUN",
+    "value": "19:21",
+    "tone": "summer"
+   },
+   "note": "Sunset over Noida, by the clock."
+  },
+  {
+   "type": "compare",
+   "kicker": "SUNRISE",
+   "title": [
+    "And the sun",
+    "**rises later** too."
+   ],
+   "left": {
+    "label": "21 DEC",
+    "value": "07:08",
+    "tone": "winter"
+   },
+   "right": {
+    "label": "21 JUN",
+    "value": "05:23",
+    "tone": "summer"
+   },
+   "note": "So a December day is shorter at both ends."
+  },
+  {
+   "type": "scene",
+   "image": "winter_lamp",
+   "kicker": "WHAT IT MEANS",
+   "title": [
+    "A short day leaves",
+    "**less sun to go round.**"
+   ],
+   "sub": "If a neighbour shades the sunny hours, the lamp can come on early.",
+   "say": [
+    {
+     "who": "Kabir",
+     "text": "Their side gets the sun.",
+     "tip": [
+      0.55,
+      0.19
+     ],
+     "box": [
+      0.74,
+      0.1
+     ]
+    },
+    {
+     "who": "Dhoop",
+     "text": "I get the lamp.",
+     "tip": [
+      0.37,
+      0.8
+     ],
+     "box": [
+      0.385,
+      0.66
+     ]
+    }
+   ]
+  },
+  {
+   "type": "list",
+   "kicker": "SO BEFORE YOU DECIDE",
+   "title": [
+    "Check the hours",
+    "that **matter to you.**"
+   ],
+   "items": [
+    "Visit once in the morning and once near sunset.",
+    "Ask which hours the balcony gets direct sun in December.",
+    "East faces the morning sun. West faces the evening sun."
+   ]
+  },
+  {
+   "type": "end",
+   "title": [
+    "See the sun your flat",
+    "**actually gets.**"
+   ],
+   "cta": "Free report during pre-launch",
+   "url": "apartmentiq.in",
+   "sources": [
+    "Sunrise and sunset: NOAA solar position equations,",
+    "Noida 28.54°N, flat ground, clear sky. Not a flat's sun hours."
+   ]
+  }
+ ],
+ "sources": [
+  {
+   "display": "17:28",
+   "script": "sun_facts.py",
+   "args": "--place noida --date 2026-12-21",
+   "field": "sunset"
+  },
+  {
+   "display": "19:21",
+   "script": "sun_facts.py",
+   "args": "--place noida --date 2026-06-21",
+   "field": "sunset"
+  },
+  {
+   "display": "07:08",
+   "script": "sun_facts.py",
+   "args": "--place noida --date 2026-12-21",
+   "field": "sunrise"
+  },
+  {
+   "display": "05:23",
+   "script": "sun_facts.py",
+   "args": "--place noida --date 2026-06-21",
+   "field": "sunrise"
+  },
+  {
+   "display": "28.54°N",
+   "script": "sun_facts.py",
+   "args": "--place noida --date 2026-12-21",
+   "field": "latitude_deg",
+   "format": "{:.2f}°N"
+  },
+  {
+   "display": "21 DEC",
+   "given": "date label"
+  },
+  {
+   "display": "21 JUN",
+   "given": "date label"
+  }
+ ]
+}

@@ -117,6 +117,10 @@ To add one (live chat with Flow open; 0 credits):
 
 Six pictures made on 28 Nov 2026: `visit_sunny`, `no_sun_patch`, `winter_lamp`, `balcony_tall_tower`, `dhoop_in_the_sun`, `ask_on_visit`.
 
+Five daily-life pictures added later on 28 Nov 2026, after Rajat asked for "stories from normal daily life" that are "funny and relatable": `sun_corner` (everyone crowds round Dhoop's sunny spot on the balcony), `chasing_sun` (the patch moves and they follow Dhoop, Kabir carrying the cushion), `upstairs_sun` (the neighbour's balcony above is in sun, theirs is not), `home_at_dusk` (Kabir home from work after sunset), `laundry_in_the_sun` (the drying rack and Dhoop want the same sun). These five files are 968 x 725 screen captures from Flow's viewer, because no folder on Rajat's PC was connected to bring the originals in. Replace them with the 1152 x 864 originals from Flow when one is.
+
+New pictures show daily life at home first. Use a site visit only when the story needs one.
+
 ## Known flaws (accepted on episode 1; say so when reporting)
 
 - A still made in Flow carries its own small sparkle mark in the picture. When that still is animated with a camera push-in, the old mark drifts while Flow's video mark stays put, so two sparkles can show for a second or two. Do not paint over either.

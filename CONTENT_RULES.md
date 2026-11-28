@@ -17,6 +17,7 @@ can be made on a case the rules do not cover.
 
 From the first film brief (2026-11-25): "photo realistic, state of the art graphics.. dont use images from the apartmentiq website.. consider the audiance as retail custmers looking for buying or renting.. the video should start with enaging hook and should be able to retain the audiance throughout".
 
+- **Posts are funny, relatable stories from normal daily life, and pictures are not repeated from post to post.** Rajat, 2026-11-28. How: lessons 12 and 13.
 - **The cast appears in carousels and single posts too, not only in reels, and they talk.** Rajat, 2026-11-28: "i want these charectors to be used in carousals and posts as well", then "nice.. we will keep it to thi theme.. and i want charectors to interact (dog and cat to talk in as well)". How: section 7.
 
 ## 2. What the product may claim (read from the live site, 2026-11-27)
@@ -53,6 +54,10 @@ shadow length is a fact about the sky over flat ground. It is never presented as
 10. **A line of speech must make sense for the one who says it.** Meera, sitting beside her own lamp, was given "Lamp on at noon?". Rajat, 28 Nov 2026: "lamp on at noon baloon? why". She would not ask about a lamp she switched on, and the picture is an afternoon, not noon. Fix: Meera "It's daytime, Dhoop." and Dhoop "Not in here." Before using a line, ask who is speaking, to whom, and whether they would say it. A line written only to explain the picture to the viewer is a caption: put it in the caption.
 
 11. **A new revision must be visible on the Notion page itself.** The 1 Dec carousel was redrawn with the cast and its Media URLs were updated, but the page body still showed the old slides. Rajat, 28 Nov 2026: "i dont see the latest version there with chrectors". The episode 1 page still linked the withdrawn diorama reel. Fix: on every revision, replace the page body (the slide images, or the watch link and contact sheet), say which revision it is in one line, then fetch the page and check. If a file keeps its name between revisions (`contact.jpg`), add `?v=r<revision>` to its URL in the page body so Notion does not show a stored copy.
+
+12. **Do not repeat pictures from post to post.** Five December carousels were drawn from the same six library pictures. Rajat, 28 Nov 2026: "But it's the same images". Fix: before choosing a picture, read the Slides and Run Log of the last 12 rows and leave out every picture they used. In a live chat, make new pictures for the post (0 credits in Flow). A scheduled run cannot make pictures: it uses the least recently used picture that fits, writes `cast: new pictures needed for <topic>` in Run Log, and says so in its final message.
+
+13. **Every post is a funny, relatable story from normal daily life.** The same five carousels were a lesson with one illustration, set mostly on site visits. Rajat, 28 Nov 2026: "And it should be stories from normal daily life", then "We are creating micro series which are funny and relatable". Fix: a carousel is a short story with the cast at home: a winter morning on the balcony, coming home from work, the washing, the cat and the dog wanting opposite things. Shape: picture beats first (setup, turn, punchline; two or three pictures), then one slide with the true, sourced fact, then what to do, then the end card. The joke belongs to the cast and the speech bubbles. The fact stays exact. A site visit appears only when the story needs one. Worked examples: `instagram/2026-12-05-what-a-sun-score-is/` and `instagram/2026-12-08-december-sunset/` (revision 2 of each; Rajat had not yet seen them when this was written).
 
 ## 5. Caption shape (approved on the first reel)
 

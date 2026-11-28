@@ -265,6 +265,256 @@
      ]
     }
    }
+  },
+  {
+   "name": "sun_corner",
+   "file": "sun_corner.jpg",
+   "shows": "Daily life. A winter Sunday morning on their balcony. Meera in a shawl on a cane chair with tea, Kabir on a stool with tea, both crowded round Dhoop the cat, who is asleep on a cushion in the sunniest spot. Kabir gestures at the cat to move. Chhaya the dog lies to one side.",
+   "light": "sun",
+   "use_for": "winter mornings; everyone wanting the one sunny spot; how much sun a flat gets",
+   "note": "Made 2026-11-28 in Flow (Nano Banana 2.1, 0 credits). This file is a 968 x 725 screen capture of the picture in Flow's viewer, not the downloaded original (1152 x 864). Replace it with the original when a folder on Rajat's PC is connected.",
+   "bubbles": {
+    "Meera": {
+     "tip": [
+      0.4,
+      0.4
+     ],
+     "box": [
+      0.24,
+      0.24
+     ]
+    },
+    "Kabir": {
+     "tip": [
+      0.585,
+      0.375
+     ],
+     "box": [
+      0.72,
+      0.21
+     ]
+    },
+    "Dhoop": {
+     "tip": [
+      0.44,
+      0.83
+     ],
+     "box": [
+      0.25,
+      0.89
+     ]
+    },
+    "Chhaya": {
+     "tip": [
+      0.8,
+      0.68
+     ],
+     "box": [
+      0.8,
+      0.56
+     ]
+    }
+   }
+  },
+  {
+   "name": "chasing_sun",
+   "file": "chasing_sun.jpg",
+   "shows": "Daily life. The same balcony a little later. Dhoop the cat walks off to the left with his tail up, leading. Meera follows with her tea and shawl. Kabir follows carrying the cat's cushion, resigned. Chhaya stays lying where she was.",
+   "light": "sun",
+   "use_for": "the sun patch moves through the day; following the sun round the flat; the second beat after sun_corner",
+   "note": "Made 2026-11-28 in Flow (Nano Banana 2.1, 0 credits). This file is a 968 x 725 screen capture of the picture in Flow's viewer, not the downloaded original (1152 x 864). Replace it with the original when a folder on Rajat's PC is connected.",
+   "bubbles": {
+    "Meera": {
+     "tip": [
+      0.43,
+      0.345
+     ],
+     "box": [
+      0.3,
+      0.17
+     ]
+    },
+    "Kabir": {
+     "tip": [
+      0.635,
+      0.29
+     ],
+     "box": [
+      0.72,
+      0.13
+     ]
+    },
+    "Dhoop": {
+     "tip": [
+      0.175,
+      0.81
+     ],
+     "box": [
+      0.17,
+      0.63
+     ]
+    },
+    "Chhaya": {
+     "tip": [
+      0.8,
+      0.665
+     ],
+     "box": [
+      0.8,
+      0.54
+     ]
+    }
+   }
+  },
+  {
+   "name": "upstairs_sun",
+   "file": "upstairs_sun.jpg",
+   "shows": "Daily life, seen from outside the tower. Two balconies, one above the other. The upper one is in bright sun with a colourful quilt airing over its railing. On the lower one Meera and Kabir look up, Dhoop the cat sits on a stool looking up with envy, and Chhaya the dog lies relaxed on the floor.",
+   "light": "sun above, shade below",
+   "use_for": "two flats in one tower getting different sun; floors; envy of the neighbour's sunny balcony",
+   "note": "Made 2026-11-28 in Flow (Nano Banana 2.1, 0 credits). This file is a 968 x 725 screen capture of the picture in Flow's viewer, not the downloaded original (1152 x 864). Replace it with the original when a folder on Rajat's PC is connected.",
+   "bubbles": {
+    "Meera": {
+     "tip": [
+      0.455,
+      0.6
+     ],
+     "box": [
+      0.25,
+      0.5
+     ]
+    },
+    "Kabir": {
+     "tip": [
+      0.545,
+      0.585
+     ],
+     "box": [
+      0.79,
+      0.5
+     ]
+    },
+    "Dhoop": {
+     "tip": [
+      0.37,
+      0.765
+     ],
+     "box": [
+      0.25,
+      0.5
+     ]
+    },
+    "Chhaya": {
+     "tip": [
+      0.61,
+      0.895
+     ],
+     "box": [
+      0.8,
+      0.585
+     ]
+    }
+   }
+  },
+  {
+   "name": "home_at_dusk",
+   "file": "home_at_dusk.jpg",
+   "shows": "Daily life. A December weekday evening. Kabir comes in through the front door with his office bag, surprised that it is already dark. Meera switches on the floor lamp. Dhoop the cat sits at the balcony door watching the last orange light. Chhaya the dog runs to greet Kabir.",
+   "light": "dusk, sun already set",
+   "use_for": "coming home from work in winter after sunset; short winter days; early sunset",
+   "note": "Made 2026-11-28 in Flow (Nano Banana 2.1, 0 credits). This file is a 968 x 725 screen capture of the picture in Flow's viewer, not the downloaded original (1152 x 864). Replace it with the original when a folder on Rajat's PC is connected.",
+   "bubbles": {
+    "Meera": {
+     "tip": [
+      0.415,
+      0.39
+     ],
+     "box": [
+      0.42,
+      0.2
+     ]
+    },
+    "Kabir": {
+     "tip": [
+      0.835,
+      0.295
+     ],
+     "box": [
+      0.8,
+      0.12
+     ]
+    },
+    "Dhoop": {
+     "tip": [
+      0.175,
+      0.71
+     ],
+     "box": [
+      0.27,
+      0.9
+     ]
+    },
+    "Chhaya": {
+     "tip": [
+      0.745,
+      0.685
+     ],
+     "box": [
+      0.62,
+      0.86
+     ]
+    }
+   }
+  },
+  {
+   "name": "laundry_in_the_sun",
+   "file": "laundry_in_the_sun.jpg",
+   "shows": "Daily life. A sunny afternoon in their living room. Meera pushes a clothes-drying rack towards the sunlit floor by the balcony door. Kabir stands behind her with a basket of washing. Dhoop the cat lies in the sun in the rack's way and looks up at her. Chhaya the dog lies on the rug by the sofa.",
+   "light": "sun",
+   "use_for": "drying clothes in winter; everyone wanting the same sun; weekends at home",
+   "note": "Made 2026-11-28 in Flow (Nano Banana 2.1, 0 credits). This file is a 968 x 725 screen capture of the picture in Flow's viewer, not the downloaded original (1152 x 864). Replace it with the original when a folder on Rajat's PC is connected.",
+   "bubbles": {
+    "Meera": {
+     "tip": [
+      0.57,
+      0.39
+     ],
+     "box": [
+      0.42,
+      0.12
+     ]
+    },
+    "Kabir": {
+     "tip": [
+      0.685,
+      0.34
+     ],
+     "box": [
+      0.8,
+      0.2
+     ]
+    },
+    "Dhoop": {
+     "tip": [
+      0.475,
+      0.825
+     ],
+     "box": [
+      0.29,
+      0.73
+     ]
+    },
+    "Chhaya": {
+     "tip": [
+      0.745,
+      0.85
+     ],
+     "box": [
+      0.62,
+      0.93
+     ]
+    }
+   }
   }
  ]
 }
