@@ -4,6 +4,9 @@ What Rajat has approved and rejected, in his words where he gave them. Read all 
 writing a post. Where this file and a skill disagree, this file wins. Where Rajat says something
 new, his word wins, and the lesson is added here in the same run.
 
+After this file, read `PLAYBOOK.md`: it explains the thinking behind these rules, so the same call
+can be made on a case the rules do not cover.
+
 ## 1. Rulings (Rajat, 2026-11-27)
 
 | Question | Ruling |

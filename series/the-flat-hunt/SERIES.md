@@ -32,7 +32,7 @@ Bright, clean flats high up in apartment towers in an Indian city. Pale tiled fl
 
 ## How every clip is made (this order, every time)
 
-1. **Make the first frame as a still. It costs 0 credits.** In Flow, attach the reference image and ask for "one still image, vertical 9:16, with Nano Banana". The reference for a new room is the look still `style_frames/A_stylised_3d.png` (in Flow: "Couple watching sleeping pets"). The reference for the same room in a new state is the previous still of that room.
+1. **Make the first frame as a still. It costs 0 credits.** In Flow, attach the reference image and ask for "one still image, vertical 9:16, with Nano Banana". The reference for a new room is the look still `series/the-flat-hunt/look/look_A_reference.jpg` (in Flow it is the image titled "Couple watching sleeping pets"). The reference for the same room in a new state is the previous still of that room.
 2. **Look at the still before spending.** Check all five points in "What to check" below. Remake it if any fail.
 3. **Animate the still: 24 credits.** Attach the still and write "Generate one 8 second video. Use the attached image as the first frame and keep exactly the same characters, room and stylised 3D animated film look." Then one small action per character, the light rule, the camera move, the sound, and "No speech, no text, no captions, no logos, no music."
 4. Download as 1080p (Upscaled). See `ig-kit/README.md` for the click-by-click notes.
