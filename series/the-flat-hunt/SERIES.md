@@ -1,5 +1,7 @@
 # The Flat Hunt · series guide
 
+> **ON HOLD, 28 Nov 2026 13:07.** Rajat withdrew the miniature diorama look described below: "i am looking for a different animation style.. colorful, trendy.. and a storyline with charectords, including animals". Do not make episodes from this guide. It will be rewritten when he picks the new look and cast.
+
 An animated microseries for @apartmentiq.in. Rajat, 28 Nov 2026: "i want to create a animated microseries on this theme". Look chosen by Rajat the same day: **miniature diorama**. He approved the look test (`look_test_01_diorama.mp4`) with "do it".
 
 Read `CONTENT_RULES.md` first. Every rule there applies to the series.
