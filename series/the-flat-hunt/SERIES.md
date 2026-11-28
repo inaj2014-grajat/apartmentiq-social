@@ -63,7 +63,7 @@ Caption starts "The Flat Hunt · Episode n · <title>" (a middle dot, not a colo
 
 | Ep | Title | Hook | Slot | State |
 |---|---|---|---|---|
-| 1 | The sample flat | The sample flat is sunny. Will yours be? | Thu 10 Dec | Built 28 Nov as `reel-r4.mp4` (with speech), waiting for Rajat. The first hook ("You toured the sample flat. You're buying another.") was dropped: Rajat found it "very confusing" |
+| 1 | The sample flat | The sample flat is sunny. Will yours be? | Thu 10 Dec | Built 28 Nov as `reel-r5.mp4` (with speech), waiting for Rajat. The first hook ("You toured the sample flat. You're buying another.") was dropped: Rajat found it "very confusing" |
 | 2 | Low floor, high floor | Low floor. High floor. Same tower. Different winter. | Thu 17 Dec | Not started |
 | 3 | North-facing in December | North-facing. No direct sun all December. | Mon 21 Dec (needs a one-off publish run) | Not started |
 | 4 | East-facing | East-facing. But what stands in the east? | Thu 24 Dec | Not started |
@@ -88,14 +88,15 @@ Rajat, 28 Nov 2026: "i want charectors to interact (dog and cat to talk in as we
 
 | Who | How they talk | Example |
 |---|---|---|
-| **Dhoop** (cat) | Dry and entitled. Talks only about the sun, as if it were his. | "Sun! Mine." · "Where is my sun?" · "It's all I have." |
+| **Dhoop** (cat) | Dry and entitled. Talks only about the sun, as if it were his. | "Sun! Mine." · "Where is my sun?" · "Not in here." |
 | **Chhaya** (dog) | Cheerful and easy to please. Loves shade. Often answers Dhoop with the opposite. | "Shade! Mine." · "Shade for me." |
-| **Meera** | Asks the question the visit should have answered. | "I love it!" · "Lamp on at noon?" |
+| **Meera** | Talks to Kabir and to the animals. Says what she sees. | "I love it!" · "It's daytime, Dhoop." |
 | **Kabir** | Slower to notice. Reacts to what Meera or the animals point out. | (none yet) |
 | **Gutar** (pigeon) | Says nothing. | |
 
 Rules:
 - Six words at most a line. Two bubbles at most in a scene or on a picture slide. Let them answer each other.
+- Each line must be something that character would say to someone in the picture. A line that only explains the picture to the viewer belongs in the caption (`CONTENT_RULES.md` lesson 10).
 - The first bubble of a scene comes about 0.8 s after the cut, the second about 1.5 s later. A scene with two bubbles runs at least 4.5 s.
 - The animals never say a number, a product claim or the name ApartmentIQ. The captions carry the facts; the cast carries the feeling.
 - Nobody mocks a broker or a builder. No surnames. English.

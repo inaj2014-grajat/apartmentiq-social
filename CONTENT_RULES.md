@@ -47,6 +47,8 @@ shadow length is a fact about the sky over flat ground. It is never presented as
 
 9. **A hook must be clear on first read.** Episode 1 opened with "You toured the sample flat. You're buying another." Rajat, 28 Nov 2026: "very confusing". "Another" left the reader to work out which flat was meant. Fix: "The sample flat is sunny. Will yours be?" Say the two things by name ("the sample flat", "yours", "your flat") and do not make the reader decode a clever turn. Before using a hook, read it alone with no picture: if it needs a second read, rewrite it.
 
+10. **A line of speech must make sense for the one who says it.** Meera, sitting beside her own lamp, was given "Lamp on at noon?". Rajat, 28 Nov 2026: "lamp on at noon baloon? why". She would not ask about a lamp she switched on, and the picture is an afternoon, not noon. Fix: Meera "It's daytime, Dhoop." and Dhoop "Not in here." Before using a line, ask who is speaking, to whom, and whether they would say it. A line written only to explain the picture to the viewer is a caption: put it in the caption.
+
 ## 5. Caption shape (approved on the first reel)
 
 1. The hook, 125 characters or fewer.

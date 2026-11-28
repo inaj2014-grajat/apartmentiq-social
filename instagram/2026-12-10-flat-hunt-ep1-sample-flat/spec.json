@@ -5,7 +5,7 @@
  "slug": "flat-hunt-ep1-sample-flat",
  "series": "The Flat Hunt",
  "episode": 1,
- "revision": 4,
+ "revision": 5,
  "ai_footage": true,
  "end_seconds": 5,
  "scenes": [
@@ -111,20 +111,20 @@
    "say": [
     {
      "who": "Meera",
-     "text": "Lamp on at noon?",
+     "text": "It's daytime, Dhoop.",
      "at": 0.9,
      "tip": [
       880,
       845
      ],
      "box": [
-      790,
+      740,
       735
      ]
     },
     {
      "who": "Dhoop",
-     "text": "It's all I have.",
+     "text": "Not in here.",
      "at": 2.6,
      "tip": [
       545,

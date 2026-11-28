@@ -84,19 +84,19 @@
    "say": [
     {
      "who": "Meera",
-     "text": "Lamp on at noon?",
+     "text": "It's daytime, Dhoop.",
      "tip": [
       0.19,
       0.3
      ],
      "box": [
-      0.25,
+      0.26,
       0.12
      ]
     },
     {
      "who": "Dhoop",
-     "text": "Not the sun.",
+     "text": "Not in here.",
      "tip": [
       0.37,
       0.8
@@ -191,5 +191,5 @@
    "given": "date label"
   }
  ],
- "revision": 2
+ "revision": 3
 }
