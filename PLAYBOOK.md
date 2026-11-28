@@ -86,6 +86,8 @@ Five moves, every time.
 | "We build the towers in 3D" over footage of a tower going up | "It seems to covey that we create the neighbour tower" | Words that meant one thing next to a picture that meant another | Lesson 5: read the words against the picture they sit on |
 | Meera: "Lamp on at noon?" | "lamp on at noon baloon? why" | A caption dressed up as speech | Lesson 10: a line must fit its speaker |
 
+| Five carousels built as lessons, all from the same six pictures | "But it's the same images", "it should be stories from normal daily life", "We are creating micro series which are funny and relatable" | A reused picture was reported as a caveat instead of being fixed, and the post taught before it entertained | Lessons 12 and 13: new pictures for each post, and a funny daily-life story first, the fact after. He said "Good" to that shape |
+
 A change he asks for is a new revision. The post goes back to `Pending Approval`. "ok" in chat is not approval; only the Notion Status is.
 
 ## 6. Changing the kit
@@ -114,6 +116,8 @@ Why: a check that has only ever been seen passing has not been tested.
 - Wrote a hook that was clever instead of clear.
 - Gave a character a line that explained the picture.
 - Updated a row's fields for a new revision and left the old pictures in the page body, so Rajat was looking at the old version.
+- Reused the same six cast pictures across five posts and told Rajat about it as a caveat. A known flaw is fixed before the work is shown, not listed under it.
+- Built carousels as a lesson with one illustration. He wanted a funny story from daily life, with the fact after it.
 - Asked a model to draw a moving shadow on real buildings from a reference image, twice. It cannot. A scale model or a time-lapse prompt works.
 
 ## 9. How to report to Rajat
