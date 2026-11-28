@@ -5,7 +5,7 @@
  "slug": "flat-hunt-ep1-sample-flat",
  "series": "The Flat Hunt",
  "episode": 1,
- "revision": 2,
+ "revision": 3,
  "ai_footage": true,
  "end_seconds": 5,
  "scenes": [
@@ -18,11 +18,11 @@
    "ambience_db": 6,
    "chip": "THE FLAT HUNT · EP 1",
    "lines": [
-    "You toured",
-    "the sample flat.",
-    "**You're buying another.**"
+    "The sample flat",
+    "is sunny.",
+    "**Will yours be?**"
    ],
-   "size": 84
+   "size": 88
   },
   {
    "clip": "clips/s2_shaded_empty_flat.mp4",
@@ -31,7 +31,7 @@
    "position": "top",
    "mood": "dark",
    "ambience_db": 6,
-   "chip": "THE FLAT YOU GET",
+   "chip": "YOUR FLAT",
    "lines": [
     "Same layout.",
     "**Other side of the tower.**"

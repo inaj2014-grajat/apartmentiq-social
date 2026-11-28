@@ -63,7 +63,7 @@ Caption starts "The Flat Hunt · Episode n · <title>" (a middle dot, not a colo
 
 | Ep | Title | Hook | Slot | State |
 |---|---|---|---|---|
-| 1 | The sample flat | You toured the sample flat. You're buying another. | Thu 10 Dec | Built 28 Nov as `reel-r2.mp4`, waiting for Rajat |
+| 1 | The sample flat | The sample flat is sunny. Will yours be? | Thu 10 Dec | Built 28 Nov as `reel-r3.mp4`, waiting for Rajat. The first hook ("You toured the sample flat. You're buying another.") was dropped: Rajat found it "very confusing" |
 | 2 | Low floor, high floor | Low floor. High floor. Same tower. Different winter. | Thu 17 Dec | Not started |
 | 3 | North-facing in December | North-facing. No direct sun all December. | Mon 21 Dec (needs a one-off publish run) | Not started |
 | 4 | East-facing | East-facing. But what stands in the east? | Thu 24 Dec | Not started |
@@ -71,7 +71,7 @@ Caption starts "The Flat Hunt · Episode n · <title>" (a middle dot, not a colo
 
 Do not build episodes 2 to 5 until Rajat has approved episode 1 in this look. Scene notes for them are in `REEL_CONCEPTS_2026-11-28.md` on Rajat's PC (`marketing\instagram\`), written for live action: re-stage each with the cast, and let Dhoop show the point.
 
-Episode 1, for reference: (1) the sample flat, a big sun patch, Dhoop flops into it; (2) the flat they get, same layout, other side of the tower, empty, no sun patch, Dhoop looks for it and Chhaya is delighted; (3) the same flat in winter, a lamp on in the daytime, Meera in a shawl, Dhoop asleep in the lamp's light; (4) the shared closing.
+Episode 1, for reference: (1) the sample flat, a big sun patch, Dhoop flops into it; (2) chip `YOUR FLAT`: the flat they get, same layout, other side of the tower, empty, no sun patch, Dhoop looks for it and Chhaya is delighted; (3) the same flat in winter, a lamp on in the daytime, Meera in a shawl, Dhoop asleep in the lamp's light; (4) the shared closing.
 
 ## What to check in every still and every clip
 
