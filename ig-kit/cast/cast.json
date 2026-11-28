@@ -1,19 +1,103 @@
 {
- "note": "Pictures of the cast for carousel and single-post slides. Made in Flow (Nano Banana) on 2026-11-28 from the look still, 0 credits each. Use a picture by its name in a slide's \"image\" field. Pick by the words in \"shows\" and \"use_for\"; open the .jpg and look before using it. A scheduled run cannot make new pictures: it uses these. New ones are made in a live chat (series/the-flat-hunt/SERIES.md, section Cast pictures).",
+ "note": "Pictures of the cast for carousel and single-post slides. Made in Flow (Nano Banana) on 2026-11-28 from the look still, 0 credits each. Use a picture by its name in a slide's \"image\" field. Pick by the words in \"shows\" and \"use_for\"; open the .jpg and look before using it. A scheduled run cannot make new pictures: it uses these. New ones are made in a live chat (series/the-flat-hunt/SERIES.md, section Cast pictures). \"bubbles\" gives, for each character who has room to speak in that picture, a tested tip (the head) and box (the bubble centre) as fractions of the picture: use them as they are. They were tested with a 13 character line; if the kit says a longer line runs off the picture, move the box toward the middle. A character with no entry has no room in that picture.",
  "pictures": [
   {
    "name": "visit_sunny",
    "file": "visit_sunny.jpg",
    "shows": "A site visit in a bright empty flat. A big patch of sun on the floor. Meera and Kabir look around, pleased. Dhoop the cat sits asleep in the sun patch. Chhaya the dog sits beside Kabir.",
    "light": "sun",
-   "use_for": "the site visit; a flat that looks bright on the day you see it"
+   "use_for": "the site visit; a flat that looks bright on the day you see it",
+   "bubbles": {
+    "Meera": {
+     "tip": [
+      0.54,
+      0.3
+     ],
+     "box": [
+      0.36,
+      0.15
+     ]
+    },
+    "Kabir": {
+     "tip": [
+      0.66,
+      0.29
+     ],
+     "box": [
+      0.81,
+      0.17
+     ]
+    },
+    "Dhoop": {
+     "tip": [
+      0.41,
+      0.77
+     ],
+     "box": [
+      0.21,
+      0.64
+     ]
+    },
+    "Chhaya": {
+     "tip": [
+      0.72,
+      0.58
+     ],
+     "box": [
+      0.82,
+      0.48
+     ]
+    }
+   }
   },
   {
    "name": "no_sun_patch",
    "file": "no_sun_patch.jpg",
    "shows": "An empty flat on the shaded side. No patch of sun on the floor. Dhoop the cat sits in the middle of the bare floor and looks at the camera, puzzled. Meera and Kabir look out at the tower close outside. Chhaya lies on the cool floor.",
    "light": "no sun",
-   "use_for": "the question nobody asked; a flat with no direct sun; what the brochure left out"
+   "use_for": "the question nobody asked; a flat with no direct sun; what the brochure left out",
+   "bubbles": {
+    "Meera": {
+     "tip": [
+      0.51,
+      0.34
+     ],
+     "box": [
+      0.33,
+      0.2
+     ]
+    },
+    "Kabir": {
+     "tip": [
+      0.6,
+      0.31
+     ],
+     "box": [
+      0.82,
+      0.2
+     ]
+    },
+    "Dhoop": {
+     "tip": [
+      0.45,
+      0.72
+     ],
+     "box": [
+      0.23,
+      0.62
+     ]
+    },
+    "Chhaya": {
+     "tip": [
+      0.66,
+      0.68
+     ],
+     "box": [
+      0.81,
+      0.56
+     ]
+    }
+   }
   },
   {
    "name": "winter_lamp",
@@ -21,28 +105,166 @@
    "shows": "Their furnished living room on a winter afternoon. No sun in the room. A floor lamp is on in the daytime. Dhoop sleeps in the lamp's light. Meera sits in a shawl with tea. Kabir stands at the balcony door looking at the sunlit tower opposite. Chhaya sleeps.",
    "light": "no sun",
    "use_for": "winter; living with a flat that gets no direct sun; lights on in the daytime",
-   "note": "Cropped on the left and top to keep the wall plain."
+   "note": "Cropped on the left and top to keep the wall plain.",
+   "bubbles": {
+    "Meera": {
+     "tip": [
+      0.19,
+      0.3
+     ],
+     "box": [
+      0.26,
+      0.12
+     ]
+    },
+    "Kabir": {
+     "tip": [
+      0.55,
+      0.19
+     ],
+     "box": [
+      0.76,
+      0.1
+     ]
+    },
+    "Dhoop": {
+     "tip": [
+      0.37,
+      0.8
+     ],
+     "box": [
+      0.385,
+      0.66
+     ]
+    }
+   }
   },
   {
    "name": "balcony_tall_tower",
    "file": "balcony_tall_tower.jpg",
    "shows": "Meera and Kabir on their balcony, seen from behind, looking up at a taller apartment tower directly opposite. The sun sits at the top edge of that tower. Dhoop sits on a stool looking up. Gutar the pigeon is on the railing.",
    "light": "low sun behind a tower",
-   "use_for": "what stands in front of the balcony; a neighbouring tower; the low winter sun"
+   "use_for": "what stands in front of the balcony; a neighbouring tower; the low winter sun",
+   "bubbles": {
+    "Meera": {
+     "tip": [
+      0.37,
+      0.45
+     ],
+     "box": [
+      0.17,
+      0.33
+     ]
+    },
+    "Kabir": {
+     "tip": [
+      0.69,
+      0.42
+     ],
+     "box": [
+      0.83,
+      0.3
+     ]
+    },
+    "Dhoop": {
+     "tip": [
+      0.535,
+      0.79
+     ],
+     "box": [
+      0.555,
+      0.905
+     ]
+    }
+   }
   },
   {
    "name": "dhoop_in_the_sun",
    "file": "dhoop_in_the_sun.jpg",
    "shows": "Close view near the floor. Dhoop the cat stretched out asleep in a bright patch of sun. Chhaya the dog asleep in the shade under the sofa. Meera and Kabir smile from the doorway. Gutar on the balcony railing.",
    "light": "sun",
-   "use_for": "the good outcome; a flat that gets real sun; knowing before you sign"
+   "use_for": "the good outcome; a flat that gets real sun; knowing before you sign",
+   "bubbles": {
+    "Meera": {
+     "tip": [
+      0.56,
+      0.18
+     ],
+     "box": [
+      0.4,
+      0.12
+     ]
+    },
+    "Dhoop": {
+     "tip": [
+      0.33,
+      0.72
+     ],
+     "box": [
+      0.24,
+      0.58
+     ]
+    },
+    "Chhaya": {
+     "tip": [
+      0.71,
+      0.69
+     ],
+     "box": [
+      0.77,
+      0.56
+     ]
+    }
+   }
   },
   {
    "name": "ask_on_visit",
    "file": "ask_on_visit.jpg",
    "shows": "A site visit in an empty flat, soft even light, no sun patch. Meera holds a blank notepad and points at the balcony, asking a question. Kabir looks where she points, shading his eyes. Dhoop stands at the balcony door. Chhaya sits beside them. A tower close outside.",
    "light": "no sun",
-   "use_for": "what to ask on a visit; questions for the broker or builder; checklists"
+   "use_for": "what to ask on a visit; questions for the broker or builder; checklists",
+   "bubbles": {
+    "Meera": {
+     "tip": [
+      0.5,
+      0.38
+     ],
+     "box": [
+      0.4,
+      0.24
+     ]
+    },
+    "Kabir": {
+     "tip": [
+      0.63,
+      0.36
+     ],
+     "box": [
+      0.81,
+      0.24
+     ]
+    },
+    "Dhoop": {
+     "tip": [
+      0.29,
+      0.69
+     ],
+     "box": [
+      0.17,
+      0.56
+     ]
+    },
+    "Chhaya": {
+     "tip": [
+      0.6,
+      0.69
+     ],
+     "box": [
+      0.82,
+      0.66
+     ]
+    }
+   }
   }
  ]
 }

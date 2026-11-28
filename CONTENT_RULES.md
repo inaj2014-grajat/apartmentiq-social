@@ -79,4 +79,7 @@ The cast is Meera, Kabir, Dhoop the ginger cat, Chhaya the black dog and Gutar t
 
 8. **The cast talks, the dog and the cat too.** Rajat, 2026-11-28: "i want charectors to interact (dog and cat to talk in as well)". Speech goes in speech bubbles drawn by the kit (`"say"` in the spec), in reels and on picture slides. Six words at most a line, two bubbles at most in a scene or on a slide. Who says what, and what they never say, is in `series/the-flat-hunt/SERIES.md`, section "Voices". Speech is on-screen text only: no voices in the sound unless Rajat asks.
 
+9. **Bubble positions come from `cast.json`.** Each picture lists a tested `tip` and `box` for every character who has room to speak in it. Copy them into the slide's `say`. Do not guess positions, and do not give a line to a character the picture has no entry for.
+10. **A new post starts at revision 1.** Leave `revision` out of a new spec, even though the reference post's spec carries one.
+
 Worked example: `ig-kit/examples/carousel-with-cast/` (a copy of the 1 Dec carousel spec with two pictures and speech). Spec fields: `ig-kit/README.md`.
