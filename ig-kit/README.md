@@ -74,3 +74,20 @@ Prompts that worked:
 ## What the kit refuses
 
 See the docstring of `lint_aiq.py`. In short: a typed number, a number with no source, a builder or project name, an app or website screen, a claim the site does not make, AI footage without "Scenes are illustrative.", a caption without `apartmentiq.in`.
+
+## Cast pictures in carousels and posts (2026-11-28)
+
+Rule and limits: `CONTENT_RULES.md` section 7. Pictures: `ig-kit/cast/*.jpg`, described in `ig-kit/cast/cast.json`.
+
+```json
+{"type": "hook",  "image": "balcony_tall_tower", "kicker": "SUN FACTS · NOIDA",
+ "title": ["In December the noon sun", "sits only **38°** high."], "sub": "One or two short lines."}
+{"type": "scene", "image": "winter_lamp", "kicker": "WHAT IT MEANS",
+ "title": ["A flat bright in summer", "can be **shaded in winter.**"], "sub": "One short line."}
+```
+
+- A picture slide is dark, with the picture as a card (912 x 684) and the words under it. Title: 1 to 3 short lines, default size 68. Two title lines and a two-line `sub` fit; the renderer stops if the words reach the page counter.
+- The spec needs `"ai_footage": true` and the caption needs "Scenes are illustrative." `lint_aiq.py` checks both, and that the name is in `cast.json`.
+- Full example to copy: `ig-kit/examples/carousel-with-cast/spec.json`. `test_kit.py` covers it (18/18 on 28 Nov 2026).
+- To add a picture (live chat only, 0 credits): `series/the-flat-hunt/SERIES.md`, section "Cast pictures".
+

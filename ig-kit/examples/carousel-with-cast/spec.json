@@ -1,0 +1,154 @@
+{
+ "format": "carousel",
+ "pillar": "sun-fact",
+ "publish_date": "2026-12-01",
+ "slug": "december-noon-sun",
+ "ai_footage": true,
+ "slides": [
+  {
+   "type": "hook",
+   "kicker": "SUN FACTS · NOIDA",
+   "title": [
+    "In December the noon sun",
+    "sits only **38°** high."
+   ],
+   "sub": "In June it is almost overhead. That gap changes how far every shadow reaches.",
+   "image": "balcony_tall_tower"
+  },
+  {
+   "type": "compare",
+   "kicker": "NOON SUN ANGLE",
+   "title": [
+    "Same city. Same clock.",
+    "A very **different sun.**"
+   ],
+   "left": {
+    "label": "21 DEC",
+    "value": "38.0°",
+    "tone": "winter"
+   },
+   "right": {
+    "label": "21 JUN",
+    "value": "84.9°",
+    "tone": "summer"
+   },
+   "note": "How high the sun stands above the horizon at solar noon, over Noida."
+  },
+  {
+   "type": "shadow",
+   "kicker": "WHAT A LOW SUN DOES",
+   "title": [
+    "A low sun throws",
+    "a **long shadow.**"
+   ],
+   "height_m": 100,
+   "items": [
+    {
+     "label": "21 DEC",
+     "value": "128 m",
+     "shadow_m": 128,
+     "tone": "winter"
+    },
+    {
+     "label": "21 JUN",
+     "value": "9 m",
+     "shadow_m": 9,
+     "tone": "summer"
+    }
+   ],
+   "note": "Noon shadow of a 100 m tower on flat ground. Drawn to scale."
+  },
+  {
+   "type": "scene",
+   "image": "winter_lamp",
+   "kicker": "WHAT IT MEANS",
+   "title": [
+    "A flat bright in summer",
+    "can be **shaded in winter.**"
+   ],
+   "sub": "It happens when a tall neighbour stands to the south."
+  },
+  {
+   "type": "list",
+   "kicker": "SO BEFORE YOU DECIDE",
+   "title": [
+    "Ask about **winter,**",
+    "not just today."
+   ],
+   "items": [
+    "Which month were the listing photos taken?",
+    "What stands to the south of this balcony?",
+    "How far away is the next tower, and how tall?"
+   ]
+  },
+  {
+   "type": "end",
+   "title": [
+    "See the sun your flat",
+    "**actually gets.**"
+   ],
+   "cta": "Free report during pre-launch",
+   "url": "apartmentiq.in",
+   "sources": [
+    "Sun angles and shadows: NOAA solar position equations,",
+    "Noida 28.54°N, flat ground, clear sky. Not a flat's sun hours."
+   ]
+  }
+ ],
+ "sources": [
+  {
+   "display": "38°",
+   "script": "sun_facts.py",
+   "args": "--place noida --date 2026-12-21",
+   "field": "noon_altitude_deg",
+   "format": "{:.0f}°"
+  },
+  {
+   "display": "38.0°",
+   "script": "sun_facts.py",
+   "args": "--place noida --date 2026-12-21",
+   "field": "noon_altitude_deg",
+   "format": "{:.1f}°"
+  },
+  {
+   "display": "84.9°",
+   "script": "sun_facts.py",
+   "args": "--place noida --date 2026-06-21",
+   "field": "noon_altitude_deg",
+   "format": "{:.1f}°"
+  },
+  {
+   "display": "128 m",
+   "script": "sun_facts.py",
+   "args": "--place noida --date 2026-12-21 --height 100",
+   "field": "noon_shadow_m",
+   "format": "{:.0f} m"
+  },
+  {
+   "display": "9 m",
+   "script": "sun_facts.py",
+   "args": "--place noida --date 2026-06-21 --height 100",
+   "field": "noon_shadow_m",
+   "format": "{:.0f} m"
+  },
+  {
+   "display": "100 m",
+   "given": "example tower height chosen for the drawing; an input, not a measurement"
+  },
+  {
+   "display": "28.54°N",
+   "script": "sun_facts.py",
+   "args": "--place noida --date 2026-12-21",
+   "field": "latitude_deg",
+   "format": "{:.2f}°N"
+  },
+  {
+   "display": "21 DEC",
+   "given": "date label"
+  },
+  {
+   "display": "21 JUN",
+   "given": "date label"
+  }
+ ]
+}

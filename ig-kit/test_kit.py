@@ -66,11 +66,46 @@ CASES = [  # name, spec, caption, expected exit code, text that must appear in t
      "A reel.\n\napartmentiq.in\n\n#ApartmentIQ", 1, "Scenes are illustrative"),
 ]
 
+# 2026-11-28: cast pictures in carousels (Rajat: "i want these charectors to be used in carousals and posts as well")
+CAST_SPEC = copy.deepcopy(GOOD_SPEC); CAST_SPEC["ai_footage"] = True; CAST_SPEC["slides"][0]["image"] = "visit_sunny"
+CAST_CAP = GOOD_CAP.replace("\n\n#", "\n\nScenes are illustrative.\n\n#")
+def no_flag(s):     s["ai_footage"] = False
+def not_cast(s):    s["slides"][0]["image"] = "some_other_photo"
+def mutate_cast(fn):
+    s = copy.deepcopy(CAST_SPEC); fn(s); return s
+CASES += [
+    ("a carousel with a cast picture and the illustrative line passes", CAST_SPEC, CAST_CAP, 0, "RESULT PASS"),
+    ("a cast picture without ai_footage true is refused", mutate_cast(no_flag), CAST_CAP, 1, "set ai_footage true"),
+    ("a picture that is not in the cast library is refused", mutate_cast(not_cast), CAST_CAP, 1, "not in the cast library"),
+    ("a cast picture without the illustrative line is refused", CAST_SPEC, GOOD_CAP, 1, "Scenes are illustrative"),
+    ("a carousel with no picture still may not claim AI footage", mutate(lambda s: s.update(ai_footage=True)), CAST_CAP, 1, "no cast picture"),
+]
+
+
+def render(spec):
+    with tempfile.TemporaryDirectory() as d:
+        json.dump(spec, open(f"{d}/spec.json", "w", encoding="utf-8"), ensure_ascii=False)
+        r = subprocess.run([sys.executable, "-I", f"{HERE}/render.py", f"{d}/spec.json", d], capture_output=True, text=True)
+        made = sorted(f for f in os.listdir(d) if f.endswith(".jpg"))
+        return r.returncode, r.stdout + r.stderr, made
+
+
+RENDER_CASES = [  # name, spec, expected exit code (0 or non-zero), text that must appear, slide file that must exist
+    ("render: a hook with a cast picture is drawn", CAST_SPEC, 0, "01-hook.jpg", "01-hook.jpg"),
+    ("render: a picture that is not in the cast library is refused", mutate_cast(not_cast), 1, "not in the cast library", None),
+]
+
 bad = 0
+for name, spec, want, needle, must in RENDER_CASES:
+    code, out, made = render(spec)
+    ok = (code == 0) == (want == 0) and needle in out and (must is None or must in made)
+    bad += not ok
+    print(("ok   " if ok else "WRONG"), name, "" if ok else f"\n      exit {code}; made {made}; output:\n{out[-600:]}")
 for name, spec, cap, want, needle in CASES:
     code, out = run(spec, cap)
     ok = code == want and needle in out
     bad += not ok
     print(("ok   " if ok else "WRONG"), name, "" if ok else f"\n      exit {code}, wanted {want}; output:\n{out}")
-print(f"{len(CASES) - bad}/{len(CASES)} cases behave as expected")
+N = len(CASES) + len(RENDER_CASES)
+print(f"{N - bad}/{N} cases behave as expected")
 sys.exit(1 if bad else 0)

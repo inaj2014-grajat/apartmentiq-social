@@ -170,8 +170,23 @@ def check_spec(spec):
             fail("a carousel takes 3 to 8 slides")
         elif sl[0].get("type") != "hook" or sl[-1].get("type") != "end":
             fail("first slide must be type hook, last must be type end")
-        if spec.get("ai_footage"):
-            fail("a carousel is drawn in code; ai_footage must be false")
+        # 2026-11-28: a slide may carry a cast picture ("image": "<name>" from ig-kit/cast/cast.json).
+        # Those pictures are AI-made, so the post must say so: ai_footage true, and the caption line below.
+        pics = [(k + 1, s_.get("type"), s_.get("image")) for k, s_ in enumerate(sl) if s_.get("image")]
+        if pics:
+            try:
+                lib = [c["name"] for c in json.load(open(os.path.join(HERE, "cast", "cast.json"), encoding="utf-8"))["pictures"]]
+            except Exception as e:
+                lib = []; fail(f"cannot read ig-kit/cast/cast.json: {e}")
+            for k, typ, name in pics:
+                if name not in lib:
+                    fail(f"slide {k}: picture {name!r} is not in the cast library (ig-kit/cast/cast.json)")
+                if typ not in ("hook", "scene"):
+                    fail(f"slide {k}: only hook and scene slides take a picture, not {typ!r}")
+            if not spec.get("ai_footage"):
+                fail("carousel uses a cast picture: set ai_footage true (the caption then needs 'Scenes are illustrative.')")
+        elif spec.get("ai_footage"):
+            fail("carousel has no cast picture: ai_footage must be false")
     if fmt == "reel":
         sc = spec.get("scenes", [])
         if len(sc) < 2:

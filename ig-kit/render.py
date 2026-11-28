@@ -10,7 +10,8 @@ listed in ig-kit/README.md, section "Look at it".
 SPEC (see ig-kit/README.md for a full example)
   {"format": "carousel", "slides": [ {...}, ... ], "sources": [ {...}, ... ]}
 Slide types and their fields:
-  hook     kicker, title (list of lines), sub
+  hook     kicker, title (list of lines), sub. Optional image: a cast picture name; the slide is then drawn like a scene
+  scene    image (a name from ig-kit/cast/cast.json), kicker, title (1 to 3 short lines), sub (one short line)
   compare  kicker, title, left {label, value, tone}, right {label, value, tone}, note
   shadow   kicker, title, height_m, items [{label, value, shadow_m, tone}], note
   fact     kicker, value, label, sub
@@ -145,6 +146,8 @@ def para(d, text, y, size, fill, accent, width=W - 2 * M, weight="Medium", lh=1.
 
 
 def s_hook(s, i, n):
+    if s.get("image"):
+        return s_scene(s, i, n)
     im, d = frame(True, s.get("kicker"), i, n)
     size = s.get("size", 104)
     total = len(s["title"]) * int(size * 1.12)
@@ -152,6 +155,42 @@ def s_hook(s, i, n):
     y = title_block(d, s["title"], y, size, WHITE, EMER)
     if s.get("sub"):
         para(d, s["sub"], y + 36, 46, ONNAVY, EMER)
+    return im
+
+
+# ---- cast pictures (2026-11-28). Rajat: "i want these charectors to be used in carousals and posts as well".
+# A slide with "image": "<name>" shows that picture from ig-kit/cast/ as a card, with the words under it.
+# The picture is never cropped or painted on here: Flow's sparkle mark at its bottom right stays visible.
+CAST_DIR = os.path.join(HERE, "cast")
+
+
+def cast_names():
+    return [c["name"] for c in json.load(open(os.path.join(CAST_DIR, "cast.json"), encoding="utf-8"))["pictures"]]
+
+
+def cast_image(name):
+    lib = json.load(open(os.path.join(CAST_DIR, "cast.json"), encoding="utf-8"))["pictures"]
+    entry = next((c for c in lib if c["name"] == name), None)
+    assert entry, f"picture {name!r} is not in the cast library (ig-kit/cast/cast.json). Use one of: {', '.join(c['name'] for c in lib)}"
+    im = Image.open(os.path.join(CAST_DIR, entry["file"])).convert("RGB")
+    assert abs(im.size[0] / im.size[1] - 4 / 3) < 0.02, f"cast picture {name!r} must be 4:3, it is {im.size}"
+    return im
+
+
+def s_scene(s, i, n):
+    """Dark slide: a cast picture as a card, then the title, then one short line."""
+    im, d = frame(True, s.get("kicker"), i, n)
+    cw = W - 2 * M; ch = round(cw * 3 / 4); top = 170
+    pic = cast_image(s["image"]).resize((cw, ch), Image.LANCZOS)
+    mask = Image.new("L", (cw, ch), 0)
+    ImageDraw.Draw(mask).rounded_rectangle([0, 0, cw - 1, ch - 1], radius=24, fill=255)
+    im.paste(pic, (M, top), mask)
+    d = ImageDraw.Draw(im)
+    d.rounded_rectangle([M, top, M + cw - 1, top + ch - 1], radius=24, outline=(255, 255, 255, 46), width=2)
+    y = title_block(d, s["title"], top + ch + 44, s.get("size", 68), WHITE, EMER)
+    if s.get("sub"):
+        y = para(d, s["sub"], y + 18, 38, ONNAVY, EMER)
+    assert y < H - M - 30, "picture slide: the words run into the page counter. Use fewer or shorter lines (2 title lines and a 2 line sub fit)"
     return im
 
 
@@ -268,7 +307,7 @@ def s_end(s, i, n):
     return im
 
 
-DRAW = {"hook": s_hook, "compare": s_compare, "shadow": s_shadow, "fact": s_fact, "list": s_list, "end": s_end}
+DRAW = {"hook": s_hook, "scene": s_scene, "compare": s_compare, "shadow": s_shadow, "fact": s_fact, "list": s_list, "end": s_end}
 
 
 SAFE = 60   # px. Instagram's profile grid shows the first slide cropped to 3:4, which cuts

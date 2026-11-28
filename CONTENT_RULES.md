@@ -14,6 +14,8 @@ new, his word wins, and the lesson is added here in the same run.
 
 From the first film brief (2026-11-25): "photo realistic, state of the art graphics.. dont use images from the apartmentiq website.. consider the audiance as retail custmers looking for buying or renting.. the video should start with enaging hook and should be able to retain the audiance throughout".
 
+- **The cast appears in carousels and single posts too, not only in reels.** Rajat, 2026-11-28: "i want these charectors to be used in carousals and posts as well". How: section 7.
+
 ## 2. What the product may claim (read from the live site, 2026-11-27)
 
 - "See the sun your flat actually gets."
@@ -60,3 +62,17 @@ Plain English. Short sentences. No emoji. No exclamation marks.
 
 Navy, emerald, white. Inter and IBM Plex Mono. 21 December is always blue, 21 June always amber.
 Calm and minimal. The renderer holds these; do not restyle a post by hand.
+
+## 7. The cast in carousels and posts (from 2026-11-28)
+
+The cast is Meera, Kabir, Dhoop the ginger cat, Chhaya the black dog and Gutar the pigeon (`series/the-flat-hunt/SERIES.md`). Every new carousel and single post shows them. Posts Rajat approved before this date stay as approved unless he says to redo them.
+
+1. **Slide 1 carries a cast picture.** Give the hook slide `"image": "<name>"`. The picture sits above the hook.
+2. **One more picture slide in the middle**, type `scene`, where the post says what the point means for a flat. Two or three pictures in a post at most. Number slides (`compare`, `shadow`, `fact`) and the `list` slide stay as drawn. The end card does not change.
+3. **Pictures come only from `ig-kit/cast/`.** `cast.json` says what each one shows and what it is for. Open the .jpg and look before using it. A scheduled run cannot make pictures: it picks from this folder. If none fits, use the nearest one and write `cast: no picture fits <topic>` in Run Log, so a new one gets made in a live chat.
+4. **The picture must agree with the words.** A slide about a flat with no sun does not get a picture with a sun patch, and the other way round. `cast.json` has a `light` field for this.
+5. **Say the scenes are illustrative.** Set `"ai_footage": true` in the spec and put the line "Scenes are illustrative." in the caption. The lint refuses the post otherwise.
+6. **Names.** Dhoop, Chhaya, Meera and Kabir may be named in a `sub` line or the caption ("Dhoop the cat", the first time). No surnames. The hook must still make sense to someone who has never seen them.
+7. **Never paint on, crop or cover a picture.** Flow's sparkle mark at its bottom right stays visible. The renderer shows the whole picture.
+
+Worked example: `ig-kit/examples/carousel-with-cast/` (the 1 Dec carousel redrawn with two pictures; not a post). Spec fields: `ig-kit/README.md`.

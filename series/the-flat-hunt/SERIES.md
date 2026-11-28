@@ -82,6 +82,20 @@ Episode 1, for reference: (1) the sample flat, a big sun patch, Dhoop flops into
 5. Flow's watermark is visible and not covered.
 6. Hands, paws and faces: nothing broken, nothing exaggerated.
 
+## Cast pictures (for carousels and single posts)
+
+Rajat, 28 Nov 2026: "i want these charectors to be used in carousals and posts as well". The rule is `CONTENT_RULES.md` section 7. The pictures live in `ig-kit/cast/` with `cast.json`.
+
+To add one (live chat with Flow open; 0 credits):
+
+1. In Flow attach the look still ("Couple watching sleeping pets"). If the picker already previews it, press "Add to prompt"; clicking the name again closes the picker.
+2. Ask: "Generate one still image, landscape 4:3, with Nano Banana. Use the attached image only as a reference for the same characters and the same stylised 3D animated film look with vibrant colours and soft rounded shapes. It is a new scene. Scene: [...]. Keep the people and animals in the middle of the picture, away from the edges. No text, no signs, no logos."
+3. Download the PNG, look at it against "What to check" above, and check the walls: no religious pictures, no writing.
+4. Save it as `ig-kit/cast/<name>.jpg` (4:3, quality 92; crop only to remove something on a wall, never the bottom right corner) and add its entry to `cast.json`: `name`, `file`, `shows`, `light`, `use_for`.
+5. Run `python3 -I ig-kit/test_kit.py`.
+
+Six pictures made on 28 Nov 2026: `visit_sunny`, `no_sun_patch`, `winter_lamp`, `balcony_tall_tower`, `dhoop_in_the_sun`, `ask_on_visit`.
+
 ## Known flaws (accepted on episode 1; say so when reporting)
 
 - A still made in Flow carries its own small sparkle mark in the picture. When that still is animated with a camera push-in, the old mark drifts while Flow's video mark stays put, so two sparkles can show for a second or two. Do not paint over either.
