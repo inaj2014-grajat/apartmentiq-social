@@ -1,0 +1,94 @@
+{
+ "format": "reel",
+ "pillar": "blind-spot",
+ "publish_date": "2026-12-10",
+ "slug": "flat-hunt-ep1-sample-flat",
+ "series": "The Flat Hunt",
+ "episode": 1,
+ "ai_footage": true,
+ "end_seconds": 5,
+ "scenes": [
+  {
+   "clip": "clips/r1-diorama/sample_flat_room.mp4",
+   "in": 0.5,
+   "frames": 84,
+   "position": "top",
+   "mood": "warm",
+   "ambience_db": 0,
+   "chip": "THE FLAT HUNT · EP 1",
+   "lines": [
+    "You toured",
+    "the sample flat.",
+    "**You're buying another.**"
+   ],
+   "size": 84
+  },
+  {
+   "clip": "clips/r1-diorama/orbit_to_shaded_face.mp4",
+   "in": 2.5,
+   "frames": 96,
+   "position": "top",
+   "mood": "build",
+   "ambience_db": 0,
+   "chip": "THE SAME TOWER",
+   "lines": [
+    "Same layout.",
+    "**Other side of the tower.**"
+   ],
+   "size": 78
+  },
+  {
+   "clip": "clips/r1-diorama/empty_shaded_room.mp4",
+   "in": 2.0,
+   "frames": 96,
+   "position": "top",
+   "mood": "dark",
+   "ambience_db": 0,
+   "chip": "YOUR FLAT",
+   "lines": [
+    "It can be",
+    "a **different flat** in winter."
+   ],
+   "size": 78
+  },
+  {
+   "clip": "clips/r1-diorama/model_shadow.mp4",
+   "in": 3.3,
+   "frames": 108,
+   "position": "top",
+   "mood": "build",
+   "ambience_db": 0,
+   "chip": "APARTMENTIQ",
+   "mark": true,
+   "lines": [
+    "We trace the **real sun**",
+    "on your exact flat"
+   ],
+   "sub": "hour by hour · season by season",
+   "size": 80
+  }
+ ],
+ "end": {
+  "title": [
+   "See the sun your flat",
+   "**actually gets.**"
+  ],
+  "cta": "Free report during pre-launch",
+  "cities": "NOIDA · GURUGRAM",
+  "url": "apartmentiq.in",
+  "footnote": [
+   "Scenes are illustrative.",
+   "Report numbers come from our 3D sun model."
+  ]
+ },
+ "sources": [
+  {
+   "display": "3D",
+   "given": "product description from the live site, not a number"
+  },
+  {
+   "display": "1",
+   "given": "episode number of the series"
+  }
+ ]
+}
