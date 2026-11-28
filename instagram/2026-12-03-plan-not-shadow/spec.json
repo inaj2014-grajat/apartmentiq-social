@@ -1,98 +1,20 @@
 {
- "format": "reel",
- "pillar": "blind-spot",
- "publish_date": "2026-12-03",
- "slug": "plan-not-shadow",
- "ai_footage": true,
- "end_seconds": 5,
+ "format": "reel", "pillar": "blind-spot", "publish_date": "2026-12-03", "slug": "plan-not-shadow",
+ "ai_footage": true, "end_seconds": 5, "revision": 3,
  "scenes": [
-  {
-   "clip": "clips/plan_to_tower.mp4",
-   "in": 0.3,
-   "frames": 84,
-   "position": "low",
-   "mood": "build",
-   "ambience_db": 0,
-   "chip": "ON PAPER",
-   "lines": [
-    "The plan shows",
-    "the building.",
-    "**Not its shadow.**"
-   ],
-   "size": 88
-  },
-  {
-   "clip": "clips/plan_to_tower.mp4",
-   "in": 3.9,
-   "frames": 84,
-   "position": "low",
-   "mood": "bright",
-   "ambience_db": 0,
-   "chip": "ON SITE",
-   "lines": [
-    "A tower this tall",
-    "casts a **long shadow.**"
-   ],
-   "size": 88
-  },
-  {
-   "clip": "clips/aerial_rooftops.mp4",
-   "in": 0.5,
-   "frames": 72,
-   "position": "top",
-   "mood": "dark",
-   "ambience_db": 0,
-   "chip": "NEXT DOOR",
-   "lines": [
-    "It can fall on",
-    "the **homes behind it.**"
-   ],
-   "size": 88
-  },
-  {
-   "clip": "clips/model_shadow.mp4",
-   "in": 1.6,
-   "frames": 144,
-   "position": "top",
-   "mood": "build",
-   "ambience_db": 0,
-   "chip": "IN WINTER",
-   "lines": [
-    "In winter the shadow",
-    "**reaches further.**"
-   ],
-   "size": 84,
-   "then": {
-    "at": 2.5,
-    "chip": "APARTMENTIQ",
-    "mark": true,
-    "lines": [
-     "We trace the **real sun**",
-     "on your exact flat"
-    ],
-    "sub": "hour by hour · season by season",
-    "size": 80
-   }
-  }
+  {"clip": "clips/tower_rising_among_towers.mp4", "in": 0.2, "frames": 96, "position": "top", "mood": "build", "ambience_db": 0,
+   "chip": "THE PLOT NEXT DOOR", "lines": ["The plan shows", "the building.", "**Not its shadow.**"], "size": 88},
+  {"clip": "clips/tower_rising_among_towers.mp4", "in": 4.3, "frames": 84, "position": "low", "mood": "bright", "ambience_db": 0,
+   "chip": "A NEW TOWER", "lines": ["A new tower goes up", "**next to your flat.**"], "size": 88},
+  {"clip": "clips/shadow_on_neighbour.mp4", "in": 0.6, "frames": 108, "position": "top", "mood": "dark", "ambience_db": 0,
+   "chip": "IN WINTER", "lines": ["In winter its shadow", "can reach **your balcony.**"], "size": 78},
+  {"clip": "clips/model_shadow.mp4", "in": 3.4, "frames": 96, "position": "top", "mood": "build", "ambience_db": 0,
+   "chip": "APARTMENTIQ", "mark": true, "lines": ["We trace the **real sun**", "on your exact flat"], "sub": "hour by hour · season by season", "size": 80}
  ],
- "end": {
-  "title": [
-   "See the sun your flat",
-   "**actually gets.**"
-  ],
-  "cta": "Free report during pre-launch",
-  "cities": "NOIDA · GURUGRAM",
-  "url": "apartmentiq.in",
-  "footnote": [
-   "Scenes are illustrative.",
-   "Report numbers come from our 3D sun model."
-  ]
- },
+ "end": {"title": ["See the sun your flat", "**actually gets.**"], "cta": "Free report during pre-launch",
+         "cities": "NOIDA · GURUGRAM", "url": "apartmentiq.in",
+         "footnote": ["Scenes are illustrative.", "Report numbers come from our 3D sun model."]},
  "sources": [
-  {
-   "display": "3D",
-   "given": "product description from the live site, not a number"
-  }
- ],
- "revision": 2
+  {"display": "3D", "given": "product description from the live site, not a number"}
+ ]
 }

@@ -39,6 +39,7 @@ shadow length is a fact about the sky over flat ground. It is never presented as
 3. **Say what is true, no stronger.** "The tower next door decides your sunlight" became "can take your sunlight". Prefer "can" to "decides", "will" or "always".
 4. **One caption edit so far, not yet a rule:** on the first reel Rajat cut "from sanctioned drawings and RERA filings" from the caption. Do not put that phrase in a caption unless he asks for it.
 5. **ApartmentIQ does not build towers, so do not say "build" after footage of one going up.** The 3 Dec reel showed a plan growing into a tower, then the line "We build the towers in 3D". Rajat: "It seems to covey that we create the neighbour tower". Fix: say what we do to the sun, not to the tower: "We trace the real sun on your exact flat", "3D sunlight analysis". (The first reel's "We build your tower in 3D" was approved, but it had no construction footage before it.)
+6. **Set the story where the viewer lives, then make the point.** The 3 Dec reel first showed a drawing on a table growing into a lone tower over low houses. Rajat: "doesnt make sense.. it needs to show tower being built among already existing tower neighbourhood and then convey the message". Fix: open on existing apartment towers (the viewer's home), show the new tower going up on the plot next door, show its shadow on the neighbouring tower, then the ApartmentIQ line.
 
 ## 5. Caption shape (approved on the first reel)
 
