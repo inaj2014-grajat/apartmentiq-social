@@ -52,6 +52,8 @@ shadow length is a fact about the sky over flat ground. It is never presented as
 
 10. **A line of speech must make sense for the one who says it.** Meera, sitting beside her own lamp, was given "Lamp on at noon?". Rajat, 28 Nov 2026: "lamp on at noon baloon? why". She would not ask about a lamp she switched on, and the picture is an afternoon, not noon. Fix: Meera "It's daytime, Dhoop." and Dhoop "Not in here." Before using a line, ask who is speaking, to whom, and whether they would say it. A line written only to explain the picture to the viewer is a caption: put it in the caption.
 
+11. **A new revision must be visible on the Notion page itself.** The 1 Dec carousel was redrawn with the cast and its Media URLs were updated, but the page body still showed the old slides. Rajat, 28 Nov 2026: "i dont see the latest version there with chrectors". The episode 1 page still linked the withdrawn diorama reel. Fix: on every revision, replace the page body (the slide images, or the watch link and contact sheet), say which revision it is in one line, then fetch the page and check. If a file keeps its name between revisions (`contact.jpg`), add `?v=r<revision>` to its URL in the page body so Notion does not show a stored copy.
+
 ## 5. Caption shape (approved on the first reel)
 
 1. The hook, 125 characters or fewer.

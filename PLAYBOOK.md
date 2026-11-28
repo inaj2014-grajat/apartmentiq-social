@@ -100,6 +100,7 @@ Why: a check that has only ever been seen passing has not been tested.
 
 - **Read Notion with a SQL-mode query.** Page fetch returns markup that must never reach Instagram.
 - **A post's spec, caption, media and Notion row move together.** The publish run lints the spec at the row's Spec URL against the row's Caption. If you change one and not the other, an approved post fails on the day.
+- **The Notion page body is what Rajat looks at.** A new revision replaces the pictures and the watch link in the page body, not only the Media URLs field. Then fetch the page and check the body shows the new files. On 28 Nov two rows had new Media URLs but still showed the old slides and linked the old reel; Rajat: "i dont see the latest version there with chrectors".
 - **Test what Buffer will read.** Create a draft with the real media URLs, read it back, delete the draft.
 - **Keep the old version reachable.** When you replace an approved post, keep its files and write in Run Log how to go back.
 - **In Flow, click by element reference, not by screen position.** Wait 90 seconds for a 1080p download. Search Downloads by file name; never list the whole folder.
@@ -112,6 +113,7 @@ Why: a check that has only ever been seen passing has not been tested.
 - Chose a look from a description instead of from stills.
 - Wrote a hook that was clever instead of clear.
 - Gave a character a line that explained the picture.
+- Updated a row's fields for a new revision and left the old pictures in the page body, so Rajat was looking at the old version.
 - Asked a model to draw a moving shadow on real buildings from a reference image, twice. It cannot. A scale model or a time-lapse prompt works.
 
 ## 9. How to report to Rajat
